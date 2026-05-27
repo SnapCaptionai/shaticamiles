@@ -104,7 +104,7 @@
       background: var(--dark);
     }
     /* 🔧 Replace this placeholder block with:
-       <img src="me.png" alt="Shatica Miles" style="width:100%;max-height:500px;object-fit:cover;object-position:center 20%;display:block;" /> */
+       <img src="images/me.png.png" alt="Shatica Miles" style="width:100%;max-height:500px;object-fit:cover;object-position:center 20%;display:block;" /> */
     .hero-ph {
       width: 100%; height: 420px;
       background: linear-gradient(160deg, #060e0b 0%, #0d1f18 60%, #060e0b 100%);
@@ -204,7 +204,7 @@
       border-radius: 50%; pointer-events: none;
     }
     .story-grid { display: grid; grid-template-columns: 1fr 1.2fr; gap: 4rem; align-items: center; }
-    /* 🔧 Replace .story-ph with: <img src="shatica-hero.jpg" style="width:100%;border-radius:16px;border:1px solid var(--border);" /> */
+    /* 🔧 Replace .story-ph with: <img src="images/shatica-hero.jpg.jpg" style="width:100%;border-radius:16px;border:1px solid var(--border);" /> */
     .story-ph {
       aspect-ratio: 4/5; border-radius: 16px;
       background: var(--card); border: 1px solid var(--border);
@@ -446,7 +446,7 @@
     /* ── BANNER CLOSER ── */
     #closer { padding: 0; }
     .closer-img { width: 100%; max-height: 380px; object-fit: cover; object-position: center 20%; display: block; }
-    /* 🔧 Replace .closer-ph with: <img src="me.png" class="closer-img" alt="Shatica Miles" /> */
+    /* 🔧 Replace .closer-ph with: <img src="images/me.png.png" class="closer-img" alt="Shatica Miles" /> */
     .closer-ph {
       width: 100%; height: 340px;
       background: linear-gradient(160deg, #060e0b, #0d1f18);
@@ -526,14 +526,12 @@
 <section id="home" style="padding:0;">
   <div class="hero-banner-wrap">
     <!-- 🔧 HEADER PHOTO: Replace .hero-ph div with:
-         <img src="me.png" alt="Shatica Miles" style="width:100%;max-height:500px;object-fit:cover;object-position:center 20%;display:block;" />
+         <img src="images/me.png.png" alt="Shatica Miles" style="width:100%;max-height:500px;object-fit:cover;object-position:center 20%;display:block;" />
     -->
     <div class="hero-ph">
       <div class="hero-ph-text">
         <p>🔧 Drop your header photo here</p>
-        <span>Replace with &lt;img src="me.png"&gt;</span>
-      </div>
-    </div>
+
   </div>
   <div class="hero-text-block">
     <h1 class="hero-name">Shatica Miles <em>· Myss T</em></h1>
@@ -623,12 +621,9 @@
   <div class="container">
     <div class="story-grid">
       <!-- 🔧 ABOUT PHOTO: Replace .story-ph with your image
-           <div class="story-ph"><img src="shatica-hero.jpg" alt="Shatica Miles" /></div>
+           <div class="story-ph"><img src="images/shatica-hero.jpg.jpg" alt="Shatica Miles" /></div>
       -->
-      <div class="story-ph fade">
-        <span>📷</span>
-        <span>Upload your about photo</span>
-      </div>
+      <div class="story-ph fade"><img src="images/shatica-hero.jpg.jpg" alt="Shatica Miles" /></div>
       <div>
         <span class="eyebrow">The Story</span>
         <h2 class="story-heading fade">After 23 Years Building<br/><em>Everyone Else's Vision</em></h2>
@@ -717,7 +712,7 @@
       <div class="product-card fade">
         <!-- 🔧 Upload lemongrass balm photo → replace .product-ph with <img> -->
         <div class="product-img">
-          <div class="product-ph"><span>🧴</span><span>Upload balm photo</span></div>
+          <img src="images/lemongrass-balm.jpg.png" alt="Lemongrass Mint Body Balm" />
         </div>
         <div class="product-body">
           <p class="product-name">Lemongrass Mint Body Balm</p>
@@ -730,9 +725,7 @@
       </div>
       <div class="product-card fade">
         <!-- 🔧 Upload cucumber soap photo → replace .product-ph with <img> -->
-        <div class="product-img">
-          <div class="product-ph"><span>🧼</span><span>Upload soap photo</span></div>
-        </div>
+        <div class="product-img"><img src="images/cucumber-soap.jpg.webp" alt="Cucumber Bliss Soap" /></div>
         <div class="product-body">
           <p class="product-name">Cucumber Bliss Soap</p>
           <p class="product-desc">Gentle bars free from harsh chemicals. Scented with real botanicals.</p>
@@ -744,9 +737,7 @@
       </div>
       <div class="product-card fade">
         <!-- 🔧 Upload glow bundle photo → replace .product-ph with <img> -->
-        <div class="product-img">
-          <div class="product-ph"><span>🎁</span><span>Upload bundle photo</span></div>
-        </div>
+        <div class="product-img"><img src="images/glow-bundle.jpg.jpg" alt="Handmade Reset Glow Bundle" /></div>
         <div class="product-body">
           <p class="product-name">Handmade Reset Glow Bundle</p>
           <p class="product-desc">Soap, balm, and lip balm. Perfect for gifting or a full reset ritual.</p>
@@ -810,17 +801,8 @@
         </div>
       </div>
       <!-- 🔧 SNAPCAPTION GRAPHIC: Replace .snap-ph with your feature image
-           <img src="snapcaption-feature.jpg" style="width:100%;border-radius:14px;border:1px solid var(--border);" />
       -->
-      <div class="snap-ph fade">
-        <div class="snap-logo">SC</div>
-        <div class="snap-logo-sub">SnapCaptionAI</div>
-        <div class="snap-demo">
-          <div class="snap-demo-lbl">Generated in your voice</div>
-          <div class="snap-demo-text">"Some of y'all are not lazy. You are exhausted from carrying people who clap for you while draining you."</div>
-        </div>
-        <p class="snap-ph-note">🔧 Replace with your feature graphic</p>
-      </div>
+      <div class="fade"><img src="images/snapcaption-feature.jpg.png" alt="SnapCaptionAI" style="width:100%;border-radius:14px;border:1px solid var(--border);" /></div>
     </div>
   </div>
 </section>
@@ -899,10 +881,8 @@
 
 <!-- BANNER CLOSER -->
 <section id="closer">
-  <!-- 🔧 BANNER: Replace .closer-ph with: <img src="me.png" class="closer-img" alt="Shatica Miles" /> -->
-  <div class="closer-ph">
-    <p>🔧 Your banner image goes here — drop me.png</p>
-  </div>
+  <!-- 🔧 BANNER: Replace .closer-ph with: <img src="images/me.png.png" class="closer-img" alt="Shatica Miles" /> -->
+  <img src="images/me.png.png" class="closer-img" alt="Shatica Miles — The Gas Station" />
   <div class="closer-text">
     <h2>The Gas Station.<br/><em>Fuel for your next chapter.</em></h2>
     <p>You show up for everyone. You hold it together. You fix it. You deliver.<br/>Now it is your turn.</p>
