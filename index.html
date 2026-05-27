@@ -3,646 +3,942 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Shatica Miles | Myss T — Whose Tea TV • Garden to Skin • Work With Me</title>
-  <meta name="description" content="Shatica Miles, known as Myss T — creator, entrepreneur, and host of Whose Tea TV. Book a call, shop Garden to Skin, and start building a life that actually fits." />
-  <meta name="author" content="Shatica Miles" />
+  <title>Shatica Miles | Myss T — The Gas Station</title>
+  <meta name="description" content="For the people who hold everything together while quietly falling apart themselves. Whose Tea TV · Infinite Storefront · SnapCaptionAI." />
   <link rel="canonical" href="https://shaticamiles.com" />
-  <meta property="og:title" content="Shatica Miles | Myss T" />
-  <meta property="og:description" content="I help you stop hesitating and start executing." />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://shaticamiles.com" />
-  <meta property="og:image" content="https://shaticamiles.com/images/og-image.jpg" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Shatica Miles | Myss T" />
-  <meta name="twitter:description" content="I help you stop hesitating and start executing." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
   <style>
     :root {
-      --bg-main:#0f0f0f; --bg-soft:#1a1a1a; --bg-card:#222;
-      --text-main:#ffffff; --text-muted:#bfbfbf;
-      --accent:#4ef1c2; --accent-dark:#2ccfa5;
-      --border:rgba(78,241,194,.15); --max:1100px; --nav-h:64px;
+      --black: #080808;
+      --dark: #111;
+      --card: #181818;
+      --card2: #1e1e1e;
+      --border: rgba(78,241,194,.12);
+      --border-strong: rgba(78,241,194,.3);
+      --white: #f5f5f0;
+      --muted: #888;
+      --muted2: #666;
+      --mint: #4ef1c2;
+      --mint-dim: rgba(78,241,194,.08);
+      --mint-dim2: rgba(78,241,194,.15);
+      --max: 980px;
+      --nav-h: 58px;
     }
-    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-    html{scroll-behavior:smooth}
-    body{font-family:'DM Sans',sans-serif;background:var(--bg-main);color:var(--text-main);line-height:1.7}
-    img{max-width:100%;display:block}
-    a{color:inherit;text-decoration:none}
-    h1,h2,h3,h4{font-family:'Playfair Display',serif;line-height:1.2}
-    .container{max-width:var(--max);margin:0 auto;padding:0 1.25rem}
-    .btn{display:inline-block;padding:.75rem 1.75rem;border-radius:50px;font-size:.95rem;font-weight:600;cursor:pointer;border:none;transition:transform .2s,box-shadow .2s,background .2s}
-    .btn:hover{transform:translateY(-2px);box-shadow:0 8px 28px rgba(78,241,194,.2)}
-    .btn-mint{background:var(--accent);color:#0f0f0f}
-    .btn-mint:hover{background:var(--accent-dark)}
-    .btn-outline{background:transparent;border:2px solid var(--accent);color:var(--accent)}
-    .btn-outline:hover{background:var(--accent);color:#0f0f0f}
-    .btn-ghost{background:rgba(255,255,255,.07);color:#fff;border:1px solid rgba(255,255,255,.12)}
-    .btn-ghost:hover{background:rgba(255,255,255,.13)}
-    .section-label{text-transform:uppercase;letter-spacing:.18em;font-size:.75rem;color:var(--accent);margin-bottom:.5rem}
-    section{padding:5rem 0}
-
-    /* NAV */
-    nav{position:fixed;top:0;width:100%;z-index:100;height:var(--nav-h);background:rgba(15,15,15,.93);backdrop-filter:blur(12px);border-bottom:1px solid var(--border);display:flex;align-items:center}
-    nav .container{display:flex;align-items:center;justify-content:space-between;width:100%}
-    .nav-logo{font-family:'Playfair Display',serif;font-size:1.3rem;color:#fff}
-    .nav-logo span{color:var(--accent)}
-    .nav-links{display:flex;gap:1.6rem;align-items:center}
-    .nav-links a{font-size:.88rem;font-weight:500;color:var(--text-muted);transition:color .2s}
-    .nav-links a:hover{color:var(--accent)}
-    .nav-links a.cta-link{background:var(--accent);color:#0f0f0f;padding:.35rem .9rem;border-radius:50px;font-weight:700;font-size:.82rem}
-    .nav-links a.cta-link:hover{background:var(--accent-dark)}
-    .nav-social{display:flex;gap:.7rem}
-    .nav-social a{width:30px;height:30px;display:flex;align-items:center;justify-content:center;border-radius:50%;background:var(--bg-soft);font-size:.72rem;font-weight:700;color:var(--text-muted);border:1px solid var(--border);transition:all .2s}
-    .nav-social a:hover{background:var(--accent);color:#0f0f0f;border-color:var(--accent)}
-    .hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:4px}
-    .hamburger span{width:24px;height:2px;background:#fff;border-radius:2px;transition:.3s}
-    .mobile-menu{display:none;position:fixed;top:var(--nav-h);left:0;right:0;background:var(--bg-soft);padding:1.5rem;z-index:99;border-bottom:1px solid var(--border);flex-direction:column;gap:1rem}
-    .mobile-menu.open{display:flex}
-    .mobile-menu a{font-size:1.1rem;font-weight:500;color:#fff;padding:.4rem 0;border-bottom:1px solid rgba(255,255,255,.06)}
-    .mobile-menu a.cta-link{color:var(--accent);font-weight:700}
-
-    /* HERO */
-    #home{padding-top:calc(var(--nav-h) + 5rem);padding-bottom:5rem;background:var(--bg-main);position:relative;overflow:hidden}
-    #home::before{content:'';position:absolute;top:-100px;right:-100px;width:600px;height:600px;background:radial-gradient(circle,rgba(78,241,194,.07) 0%,transparent 70%);border-radius:50%;pointer-events:none}
-    .hero-inner{display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:center;position:relative;z-index:1}
-    .hero-tag{color:var(--accent);font-weight:600;font-size:.9rem;margin-bottom:.75rem;letter-spacing:.05em}
-    .hero-title{font-size:clamp(2.4rem,5vw,3.8rem);color:#fff;margin-bottom:1rem}
-    .hero-title em{color:var(--accent);font-style:italic}
-    .hero-sub{font-size:1.15rem;color:var(--text-muted);margin-bottom:.75rem;max-width:480px}
-    .hero-sub strong{color:#fff}
-    .hero-brand-line{font-size:.95rem;color:var(--accent);border-left:3px solid var(--accent);padding-left:1rem;margin-bottom:2rem;font-style:italic;line-height:1.6}
-    .hero-cta{display:flex;gap:1rem;flex-wrap:wrap;margin-bottom:2rem}
-    .hero-cta .btn-mint{font-size:1rem;padding:.85rem 2rem}
-    .hero-image{background:linear-gradient(135deg,#1a1a1a,#222);border-radius:24px;aspect-ratio:4/5;display:flex;align-items:center;justify-content:center;font-size:5rem;overflow:hidden;border:1px solid var(--border);box-shadow:0 0 60px rgba(78,241,194,.07)}
-    .hero-image img{width:100%;height:100%;object-fit:cover;border-radius:24px}
-    .hero-badges{display:flex;gap:.75rem;flex-wrap:wrap}
-    .badge{background:var(--bg-soft);border:1px solid var(--border);border-radius:50px;padding:.35rem .9rem;font-size:.8rem;color:var(--text-muted);font-weight:500}
-
-    /* TICKER */
-    .ticker-wrap{background:var(--accent);color:#0f0f0f;padding:.65rem 0;overflow:hidden;white-space:nowrap}
-    .ticker-track{display:inline-block;animation:ticker 28s linear infinite;font-size:.85rem;font-weight:700;letter-spacing:.05em}
-    .ticker-track span{margin:0 2.5rem}
-    @keyframes ticker{from{transform:translateX(0)}to{transform:translateX(-50%)}}
-
-    /* WORK WITH ME */
-    #work{background:var(--bg-soft);border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
-    .work-inner{max-width:700px;margin:0 auto;text-align:center}
-    .work-inner h2{font-size:clamp(2rem,4vw,3rem);color:#fff;margin-bottom:1.25rem}
-    .work-inner h2 em{color:var(--accent);font-style:italic}
-    .work-lead{font-size:1.1rem;color:var(--text-muted);margin-bottom:1rem}
-    .work-desc{font-size:1rem;color:var(--text-muted);margin-bottom:1.5rem;max-width:560px;margin-left:auto;margin-right:auto}
-    .offer-box{background:var(--bg-card);border:1px solid var(--border);border-radius:20px;padding:2.5rem 2rem;margin:2rem 0;position:relative;overflow:hidden}
-    .offer-box::before{content:'';position:absolute;top:-40px;right:-40px;width:200px;height:200px;background:radial-gradient(circle,rgba(78,241,194,.1) 0%,transparent 70%);border-radius:50%}
-    .offer-price{font-family:'Playfair Display',serif;font-size:2.5rem;color:var(--accent);font-weight:700;margin-bottom:.5rem}
-    .offer-name{font-size:1.2rem;color:#fff;font-weight:600;margin-bottom:1rem}
-    .offer-desc{font-size:.95rem;color:var(--text-muted);margin-bottom:.5rem}
-    .offer-note{font-size:.85rem;color:rgba(78,241,194,.7);font-style:italic;margin-bottom:1.75rem}
-    .offer-box .btn{font-size:1.05rem;padding:.9rem 2.5rem}
-
-    /* ABOUT */
-    #about{background:var(--bg-main)}
-    .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center}
-    .about-image{background:linear-gradient(160deg,#1a1a1a 0%,#222 100%);border-radius:20px;aspect-ratio:1;display:flex;align-items:center;justify-content:center;font-size:5rem;border:1px solid var(--border)}
-    .about-image img{width:100%;height:100%;object-fit:cover;border-radius:20px}
-    .about-title{font-size:clamp(1.8rem,3vw,2.6rem);color:#fff;margin-bottom:1.2rem}
-    .about-body{color:var(--text-muted);margin-bottom:1.25rem}
-    .framework-card{background:var(--bg-card);border-left:4px solid var(--accent);border-radius:0 12px 12px 0;padding:1.2rem 1.4rem;margin-top:1.25rem}
-    .framework-card h4{color:var(--accent);margin-bottom:.4rem;font-size:1rem}
-    .framework-card p{color:var(--text-muted);font-size:.9rem}
-
-    /* SHOP */
-    #shop{background:var(--bg-soft)}
-    .shop-header{text-align:center;max-width:600px;margin:0 auto 1.5rem}
-    .shop-header h2{font-size:clamp(1.8rem,3vw,2.5rem);color:#fff;margin-bottom:.8rem}
-    .shop-origin{background:var(--bg-card);border-left:3px solid var(--accent);border-radius:0 12px 12px 0;padding:1.1rem 1.4rem;margin-bottom:2.5rem;font-size:.95rem;color:var(--text-muted);font-style:italic}
-    .shop-origin strong{color:var(--accent);font-style:normal}
-    .products-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:1.5rem}
-    .product-card{background:var(--bg-card);border-radius:16px;overflow:hidden;transition:transform .25s,box-shadow .25s;border:1px solid var(--border)}
-    .product-card:hover{transform:translateY(-4px);box-shadow:0 12px 40px rgba(78,241,194,.1)}
-    .product-img{aspect-ratio:1;background:linear-gradient(135deg,#1a1a1a,#2a2a2a);display:flex;align-items:center;justify-content:center;font-size:3.5rem;overflow:hidden}
-    .product-img img{width:100%;height:100%;object-fit:cover}
-    .product-body{padding:1.25rem}
-    .product-name{font-family:'Playfair Display',serif;font-size:1.1rem;color:#fff;margin-bottom:.3rem}
-    .product-desc{font-size:.85rem;color:var(--text-muted);margin-bottom:1rem}
-    .product-footer{display:flex;align-items:center;justify-content:space-between}
-    .product-price{font-weight:700;font-size:1.1rem;color:var(--accent)}
-    .product-footer .btn{padding:.45rem 1.1rem;font-size:.85rem}
-    #cart-bar{margin-top:2rem;background:var(--bg-card);border-radius:16px;padding:1.25rem 1.5rem;border:1px solid var(--border);display:none;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1rem}
-
-    /* TV */
-    #tv{background:var(--bg-main);border-top:1px solid var(--border)}
-    .tv-grid{display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:center}
-    .tv-title{font-size:clamp(1.8rem,3vw,2.6rem);color:#fff;margin-bottom:1rem}
-    .tv-sub{color:var(--text-muted);margin-bottom:2rem}
-    .tv-platforms{display:flex;gap:1rem;flex-wrap:wrap}
-    .tv-platforms a{display:flex;align-items:center;gap:.5rem;background:var(--bg-soft);border:1px solid var(--border);border-radius:50px;padding:.5rem 1.1rem;font-size:.85rem;font-weight:500;color:#fff;transition:all .2s}
-    .tv-platforms a:hover{background:var(--accent);border-color:var(--accent);color:#0f0f0f}
-    .tv-embed{background:var(--bg-soft);border-radius:16px;aspect-ratio:16/9;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:1rem;border:1px solid var(--border)}
-    .tv-play{font-size:4rem}
-    .tv-embed p{color:var(--text-muted);font-size:.9rem;text-align:center;padding:0 1.5rem}
-
-    /* SHIPPING */
-    #shipping{background:var(--bg-soft);border-top:1px solid var(--border)}
-    .shipping-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;margin-top:2.5rem}
-    .ship-card{background:var(--bg-card);border-radius:16px;padding:2rem 1.5rem;text-align:center;border:1px solid var(--border)}
-    .ship-flag{font-size:2.5rem;margin-bottom:1rem}
-    .ship-country{font-family:'Playfair Display',serif;font-size:1.2rem;color:#fff;margin-bottom:.5rem}
-    .ship-details{font-size:.85rem;color:var(--text-muted)}
-
-    /* COURSE */
-    #course{background:var(--bg-main);border-top:1px solid var(--border)}
-    .course-inner{max-width:680px;margin:0 auto;text-align:center}
-    .course-inner h2{font-size:clamp(1.8rem,3vw,2.5rem);color:#fff;margin-bottom:1rem}
-    .course-inner p{color:var(--text-muted);margin-bottom:2rem}
-    .email-form{display:flex;gap:.75rem;max-width:480px;margin:0 auto;flex-wrap:wrap}
-    .email-form input{flex:1;min-width:200px;padding:.75rem 1.2rem;border:2px solid var(--border);border-radius:50px;font-size:.95rem;font-family:'DM Sans',sans-serif;background:var(--bg-soft);color:#fff;outline:none;transition:border .2s}
-    .email-form input::placeholder{color:var(--text-muted)}
-    .email-form input:focus{border-color:var(--accent)}
-    .course-perks{display:flex;gap:1.5rem;flex-wrap:wrap;justify-content:center;margin-top:2.5rem}
-    .perk{background:var(--bg-card);border:1px solid var(--border);border-radius:12px;padding:1.2rem 1.5rem;flex:1;min-width:180px;text-align:left}
-    .perk-icon{font-size:1.5rem;margin-bottom:.5rem}
-    .perk h4{font-size:.95rem;color:#fff;margin-bottom:.3rem}
-    .perk p{font-size:.82rem;color:var(--text-muted)}
-
-    /* CONNECT */
-    #connect{background:var(--bg-soft);border-top:1px solid var(--border)}
-    .connect-header{text-align:center;max-width:600px;margin:0 auto 3rem}
-    .connect-header h2{color:#fff}
-    .social-cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:1.2rem}
-    .social-card{border-radius:16px;padding:1.75rem 1.5rem;display:flex;flex-direction:column;gap:.75rem;transition:transform .2s,box-shadow .2s;color:#fff}
-    .social-card:hover{transform:translateY(-4px);box-shadow:0 10px 28px rgba(0,0,0,.4)}
-    .social-card.yt{background:#ff0000}
-    .social-card.tt{background:#010101;border:1px solid #333}
-    .social-card.fb{background:#1877f2}
-    .social-card.pin{background:#e60023}
-    .social-icon{font-size:2rem}
-    .social-name{font-weight:700;font-size:1.05rem}
-    .social-handle{font-size:.82rem;opacity:.75}
-    .social-cta{margin-top:auto;font-size:.8rem;font-weight:600;opacity:.9}
-
-    /* CONTACT */
-    #contact{background:var(--bg-main);border-top:1px solid var(--border)}
-    .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:start}
-    .contact-info h2{font-size:clamp(1.8rem,3vw,2.5rem);color:#fff;margin-bottom:1rem}
-    .contact-info p{color:var(--text-muted);margin-bottom:2rem}
-    .contact-links{display:flex;flex-direction:column;gap:.75rem}
-    .contact-link{display:flex;align-items:center;gap:.75rem;font-size:.9rem;color:var(--text-muted)}
-    .contact-form{display:flex;flex-direction:column;gap:1rem}
-    .form-group{display:flex;flex-direction:column;gap:.4rem}
-    .form-group label{font-size:.85rem;font-weight:500;color:#fff}
-    .form-group input,.form-group textarea{padding:.75rem 1rem;border:2px solid var(--border);border-radius:12px;font-family:'DM Sans',sans-serif;font-size:.95rem;background:var(--bg-soft);color:#fff;outline:none;resize:vertical;transition:border .2s}
-    .form-group input::placeholder,.form-group textarea::placeholder{color:var(--text-muted)}
-    .form-group input:focus,.form-group textarea:focus{border-color:var(--accent)}
-
-    /* FOOTER */
-    footer{background:var(--bg-soft);color:var(--text-muted);padding:3rem 0 1.5rem;border-top:1px solid var(--border)}
-    .footer-top{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:2.5rem;padding-bottom:2.5rem;border-bottom:1px solid var(--border);margin-bottom:1.5rem}
-    .footer-brand{font-family:'Playfair Display',serif;font-size:1.4rem;color:#fff;margin-bottom:.5rem}
-    .footer-brand span{color:var(--accent)}
-    .footer-tagline{font-size:.85rem;margin-bottom:.75rem}
-    .footer-gas{font-size:.82rem;color:var(--accent);font-style:italic;border-left:2px solid var(--accent);padding-left:.75rem;margin-bottom:1.25rem}
-    .footer-social{display:flex;gap:.6rem}
-    .footer-social a{width:34px;height:34px;border-radius:50%;background:var(--bg-card);border:1px solid var(--border);display:flex;align-items:center;justify-content:center;font-size:.7rem;font-weight:700;color:var(--text-muted);transition:all .2s}
-    .footer-social a:hover{background:var(--accent);color:#0f0f0f;border-color:var(--accent)}
-    .footer-col h4{color:#fff;font-size:.9rem;margin-bottom:1rem;font-weight:600}
-    .footer-col a{display:block;font-size:.85rem;margin-bottom:.5rem;color:var(--text-muted);transition:color .2s}
-    .footer-col a:hover{color:var(--accent)}
-    .footer-bottom{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem;font-size:.8rem}
-    .footer-bottom a{color:var(--text-muted)}
-    .footer-bottom a:hover{color:var(--accent)}
-
-    /* RESPONSIVE */
-    @media(max-width:768px){
-      .nav-links,.nav-social{display:none}
-      .hamburger{display:flex}
-      .hero-inner,.about-grid,.tv-grid,.contact-grid{grid-template-columns:1fr}
-      .hero-image{aspect-ratio:16/9;order:-1}
-      .shipping-grid{grid-template-columns:1fr}
-      .footer-top{grid-template-columns:1fr 1fr}
-      section{padding:3rem 0}
-      .offer-box{padding:1.75rem 1.25rem}
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background: var(--black); color: var(--white);
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
     }
-    @media(max-width:480px){
-      .footer-top{grid-template-columns:1fr}
-      .social-cards{grid-template-columns:1fr 1fr}
+    img { max-width: 100%; display: block; }
+    a { color: inherit; text-decoration: none; }
+    h1, h2, h3, h4, blockquote {
+      font-family: 'Cormorant Garamond', serif;
+      line-height: 1.15;
+    }
+    .container { max-width: var(--max); margin: 0 auto; padding: 0 1.5rem; }
+    section { padding: 5rem 0; }
+
+    /* ── NAV ── */
+    nav {
+      position: fixed; top: 0; width: 100%; z-index: 200;
+      height: var(--nav-h);
+      background: rgba(8,8,8,.96);
+      backdrop-filter: blur(20px);
+      border-bottom: 1px solid var(--border);
+      display: flex; align-items: center;
+    }
+    nav .container { display: flex; align-items: center; justify-content: space-between; width: 100%; }
+    .nav-logo { font-family: 'Cormorant Garamond', serif; font-size: 1.3rem; font-weight: 600; letter-spacing: .03em; }
+    .nav-logo em { color: var(--mint); font-style: italic; }
+    .nav-links { display: flex; gap: 2rem; align-items: center; }
+    .nav-links a { font-size: .82rem; font-weight: 500; color: var(--muted); transition: color .2s; letter-spacing: .02em; }
+    .nav-links a:hover { color: var(--white); }
+    .nav-cta {
+      background: var(--mint) !important; color: var(--black) !important;
+      padding: .38rem 1.1rem; border-radius: 50px;
+      font-weight: 700 !important; font-size: .78rem !important;
+    }
+    .nav-cta:hover { opacity: .88; }
+    .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 4px; }
+    .hamburger span { width: 22px; height: 1.5px; background: var(--white); border-radius: 2px; transition: .3s; }
+    .mobile-menu {
+      display: none; position: fixed; top: var(--nav-h); left: 0; right: 0;
+      background: var(--dark); padding: 1.5rem; z-index: 199;
+      border-bottom: 1px solid var(--border); flex-direction: column; gap: .75rem;
+    }
+    .mobile-menu.open { display: flex; }
+    .mobile-menu a { font-size: .95rem; color: var(--white); padding: .5rem 0; border-bottom: 1px solid var(--border); }
+    .mobile-menu a.nav-cta { color: var(--mint) !important; border: none; font-weight: 700; background: none !important; }
+
+    /* ── BUTTONS ── */
+    .btn {
+      display: inline-block; padding: .72rem 1.8rem; border-radius: 50px;
+      font-size: .88rem; font-weight: 600; cursor: pointer; border: none;
+      transition: transform .2s, box-shadow .2s, opacity .2s;
+      font-family: 'DM Sans', sans-serif;
+    }
+    .btn:hover { transform: translateY(-2px); }
+    .btn-mint { background: var(--mint); color: var(--black); box-shadow: 0 0 0 rgba(78,241,194,0); }
+    .btn-mint:hover { box-shadow: 0 6px 24px rgba(78,241,194,.25); }
+    .btn-ghost { background: transparent; border: 1px solid rgba(255,255,255,.2); color: var(--white); }
+    .btn-ghost:hover { border-color: var(--mint); color: var(--mint); }
+
+    /* ── LABELS ── */
+    .eyebrow {
+      display: inline-block;
+      font-family: 'DM Sans', sans-serif;
+      text-transform: uppercase; letter-spacing: .2em;
+      font-size: .68rem; font-weight: 600;
+      color: var(--mint); margin-bottom: .6rem;
     }
 
-    @keyframes fadeUp{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:translateY(0)}}
-    .fade-up{animation:fadeUp .65s ease forwards}
-    .delay-1{animation-delay:.1s;opacity:0}
-    .delay-2{animation-delay:.22s;opacity:0}
-    .delay-3{animation-delay:.38s;opacity:0}
-    .delay-4{animation-delay:.54s;opacity:0}
+    /* ── HERO ── */
+    #home { padding-top: var(--nav-h); padding-bottom: 0; }
+    .hero-banner-wrap {
+      width: 100%; position: relative; overflow: hidden;
+      background: var(--dark);
+    }
+    /* 🔧 Replace this placeholder block with:
+       <img src="me.png" alt="Shatica Miles" style="width:100%;max-height:500px;object-fit:cover;object-position:center 20%;display:block;" /> */
+    .hero-ph {
+      width: 100%; height: 420px;
+      background: linear-gradient(160deg, #060e0b 0%, #0d1f18 60%, #060e0b 100%);
+      display: flex; align-items: center; justify-content: center;
+      position: relative;
+    }
+    .hero-ph::after {
+      content: '';
+      position: absolute; inset: 0;
+      background: radial-gradient(ellipse 70% 60% at 65% 50%, rgba(78,241,194,.07) 0%, transparent 70%);
+    }
+    .hero-ph-text { text-align: center; z-index: 1; }
+    .hero-ph-text p { font-size: .72rem; color: rgba(78,241,194,.35); text-transform: uppercase; letter-spacing: .18em; margin-bottom: .4rem; }
+    .hero-ph-text span { font-family: 'Cormorant Garamond', serif; font-size: 1.2rem; color: rgba(255,255,255,.1); }
+
+    .hero-text-block {
+      text-align: center; padding: 3.5rem 1.5rem 3rem;
+      border-bottom: 1px solid var(--border);
+      position: relative;
+    }
+    .hero-text-block::before {
+      content: '';
+      position: absolute; top: 0; left: 50%; transform: translateX(-50%);
+      width: 1px; height: 40px;
+      background: linear-gradient(to bottom, var(--mint), transparent);
+    }
+    .hero-name {
+      font-size: clamp(2.8rem, 6vw, 4.5rem);
+      font-weight: 300; color: var(--white);
+      letter-spacing: -.01em; margin-bottom: .2rem;
+    }
+    .hero-name em { color: var(--mint); font-style: italic; font-weight: 300; }
+    .hero-role { font-size: .78rem; text-transform: uppercase; letter-spacing: .25em; color: var(--muted2); margin-bottom: 2rem; }
+    .hero-tagline {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(1.4rem, 3.5vw, 2rem);
+      font-weight: 300; font-style: italic;
+      color: var(--white); line-height: 1.4;
+      max-width: 560px; margin: 0 auto 1rem;
+    }
+    .hero-tagline strong { color: var(--mint); font-style: normal; font-weight: 600; }
+    .hero-recognition {
+      font-size: .93rem; color: var(--muted);
+      max-width: 480px; margin: 0 auto 2.5rem;
+    }
+    .hero-btns { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+
+    /* ── TICKER ── */
+    .ticker-wrap {
+      background: var(--mint); color: var(--black);
+      padding: .58rem 0; overflow: hidden; white-space: nowrap;
+    }
+    .ticker-track {
+      display: inline-block;
+      animation: ticker 36s linear infinite;
+      font-size: .75rem; font-weight: 700; letter-spacing: .08em;
+    }
+    .ticker-track span { margin: 0 2.2rem; }
+    @keyframes ticker { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+
+    /* ── START HERE ── */
+    #start {
+      background: var(--dark);
+      border-bottom: 1px solid var(--border);
+    }
+    .start-inner { max-width: 720px; margin: 0 auto; }
+    .start-heading {
+      font-size: clamp(1.8rem, 4vw, 3rem); font-weight: 300;
+      color: var(--white); margin-bottom: .75rem;
+    }
+    .start-heading em { color: var(--mint); font-style: italic; }
+    .start-sub { color: var(--muted); font-size: .93rem; margin-bottom: 2.5rem; max-width: 520px; }
+    .start-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+    .start-card {
+      background: var(--card); border: 1px solid var(--border);
+      border-radius: 14px; padding: 1.4rem 1.25rem;
+      transition: border-color .25s, transform .2s;
+      display: flex; flex-direction: column; gap: .4rem;
+    }
+    .start-card:hover { border-color: var(--border-strong); transform: translateY(-2px); }
+    .start-card-icon { font-size: 1.4rem; margin-bottom: .25rem; }
+    .start-card-label { font-size: .68rem; text-transform: uppercase; letter-spacing: .15em; color: var(--mint); }
+    .start-card-title { font-family: 'Cormorant Garamond', serif; font-size: 1.05rem; color: var(--white); line-height: 1.3; }
+    .start-card-desc { font-size: .8rem; color: var(--muted); flex: 1; }
+    .start-card-cta { font-size: .78rem; font-weight: 600; color: var(--mint); margin-top: .5rem; }
+
+    /* ── CREATION STORY ── */
+    #story {
+      background: var(--black);
+      position: relative; overflow: hidden;
+    }
+    #story::before {
+      content: '';
+      position: absolute; top: -80px; right: -80px;
+      width: 400px; height: 400px;
+      background: radial-gradient(circle, rgba(78,241,194,.04) 0%, transparent 70%);
+      border-radius: 50%; pointer-events: none;
+    }
+    .story-grid { display: grid; grid-template-columns: 1fr 1.2fr; gap: 4rem; align-items: center; }
+    /* 🔧 Replace .story-ph with: <img src="shatica-hero.jpg" style="width:100%;border-radius:16px;border:1px solid var(--border);" /> */
+    .story-ph {
+      aspect-ratio: 4/5; border-radius: 16px;
+      background: var(--card); border: 1px solid var(--border);
+      display: flex; align-items: center; justify-content: center;
+      flex-direction: column; gap: .75rem;
+    }
+    .story-ph span:first-child { font-size: 3rem; opacity: .15; }
+    .story-ph span:last-child { font-size: .68rem; color: rgba(78,241,194,.3); text-transform: uppercase; letter-spacing: .12em; }
+    .story-ph img { width: 100%; height: 100%; object-fit: cover; border-radius: 16px; }
+    .story-heading { font-size: clamp(1.8rem, 3.5vw, 2.8rem); font-weight: 300; color: var(--white); margin-bottom: 1.25rem; }
+    .story-heading em { color: var(--mint); font-style: italic; }
+    .story-body { color: var(--muted); font-size: .93rem; margin-bottom: 1rem; }
+    .story-quote {
+      border-left: 2px solid var(--mint);
+      padding: 1rem 1.25rem;
+      margin: 1.75rem 0;
+      background: var(--mint-dim);
+      border-radius: 0 10px 10px 0;
+    }
+    .story-quote p {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.2rem; font-style: italic;
+      color: var(--white); line-height: 1.5;
+    }
+    .story-quote cite { font-size: .72rem; color: var(--mint); text-transform: uppercase; letter-spacing: .12em; margin-top: .5rem; display: block; }
+
+    /* ── ENEMY ── */
+    #enemy {
+      background: var(--dark);
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+    }
+    .enemy-inner { max-width: 720px; margin: 0 auto; }
+    .enemy-heading { font-size: clamp(1.8rem, 4vw, 3rem); font-weight: 300; color: var(--white); margin-bottom: 1.5rem; }
+    .enemy-heading em { color: var(--mint); font-style: italic; }
+    .enemy-intro { font-size: .93rem; color: var(--muted); margin-bottom: 2rem; max-width: 560px; }
+    .enemy-list { display: flex; flex-direction: column; gap: .75rem; margin-bottom: 2.5rem; }
+    .enemy-item {
+      display: flex; align-items: flex-start; gap: 1rem;
+      padding: 1.1rem 1.25rem;
+      background: var(--card); border: 1px solid var(--border);
+      border-radius: 12px;
+      transition: border-color .2s;
+    }
+    .enemy-item:hover { border-color: var(--border-strong); }
+    .enemy-bullet {
+      width: 6px; height: 6px; border-radius: 50%;
+      background: var(--mint); flex-shrink: 0; margin-top: .55rem;
+    }
+    .enemy-text strong { color: var(--white); font-size: .93rem; display: block; margin-bottom: .1rem; }
+    .enemy-text span { font-size: .82rem; color: var(--muted); }
+    .enemy-closer {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.3rem; font-style: italic;
+      color: var(--white); line-height: 1.5;
+      border-top: 1px solid var(--border); padding-top: 1.5rem;
+    }
+    .enemy-closer em { color: var(--mint); font-style: normal; }
+
+    /* ── CREED ── */
+    #creed { background: var(--black); }
+    .creed-inner { max-width: 720px; margin: 0 auto; }
+    .creed-heading { font-size: clamp(1.8rem, 4vw, 3rem); font-weight: 300; color: var(--white); margin-bottom: .5rem; }
+    .creed-sub { color: var(--muted); font-size: .9rem; margin-bottom: 2.5rem; }
+    .creed-list { display: flex; flex-direction: column; gap: .6rem; }
+    .creed-line {
+      display: flex; align-items: center; gap: 1rem;
+      padding: .9rem 1.25rem;
+      border-left: 2px solid transparent;
+      border-radius: 0 10px 10px 0;
+      background: var(--card);
+      transition: border-color .2s, background .2s;
+    }
+    .creed-line:hover { border-color: var(--mint); background: var(--mint-dim); }
+    .creed-num { font-size: .68rem; color: var(--mint); font-weight: 700; letter-spacing: .1em; width: 24px; flex-shrink: 0; }
+    .creed-line p { font-family: 'Cormorant Garamond', serif; font-size: 1.1rem; color: var(--white); font-style: italic; }
+
+    /* ── SHOP ── */
+    #shop { background: var(--dark); }
+    .shop-heading { font-size: clamp(1.8rem, 3.5vw, 2.8rem); font-weight: 300; color: var(--white); margin-bottom: .75rem; }
+    .shop-sub { color: var(--muted); font-size: .9rem; margin-bottom: 2.5rem; max-width: 560px; }
+    .shop-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.1rem; margin-bottom: 1.75rem; }
+    .product-card {
+      background: var(--card2); border-radius: 14px; overflow: hidden;
+      border: 1px solid var(--border); transition: transform .2s, border-color .25s;
+    }
+    .product-card:hover { transform: translateY(-3px); border-color: var(--border-strong); }
+    .product-img {
+      aspect-ratio: 1; overflow: hidden; background: #141414;
+      display: flex; align-items: center; justify-content: center; position: relative;
+    }
+    .product-img img { width: 100%; height: 100%; object-fit: cover; transition: transform .4s; }
+    .product-card:hover .product-img img { transform: scale(1.05); }
+    /* 🔧 Product image placeholders — upload photos and I'll embed them */
+    .product-ph {
+      width: 100%; height: 100%;
+      display: flex; flex-direction: column; align-items: center; justify-content: center; gap: .4rem;
+    }
+    .product-ph span:first-child { font-size: 2.2rem; opacity: .2; }
+    .product-ph span:last-child { font-size: .65rem; color: rgba(78,241,194,.25); text-transform: uppercase; letter-spacing: .1em; text-align: center; padding: 0 .5rem; }
+    .product-body { padding: 1rem; }
+    .product-name { font-family: 'Cormorant Garamond', serif; font-size: 1rem; color: var(--white); margin-bottom: .2rem; }
+    .product-desc { font-size: .78rem; color: var(--muted); margin-bottom: .85rem; }
+    .product-foot { display: flex; align-items: center; justify-content: space-between; }
+    .product-price { font-weight: 700; color: var(--mint); font-size: .95rem; }
+    .product-btn {
+      background: var(--mint); color: var(--black);
+      padding: .35rem .9rem; border-radius: 50px;
+      font-size: .76rem; font-weight: 700; transition: opacity .2s;
+    }
+    .product-btn:hover { opacity: .85; }
+    .shop-footer { display: flex; justify-content: center; }
+    .shop-footer a {
+      font-size: .85rem; color: var(--mint); font-weight: 600;
+      border-bottom: 1px solid rgba(78,241,194,.25); padding-bottom: 2px;
+      transition: border-color .2s;
+    }
+    .shop-footer a:hover { border-color: var(--mint); }
+
+    /* ── WHOSE TEA TV ── */
+    #tv { background: var(--black); border-top: 1px solid var(--border); }
+    .tv-grid { display: grid; grid-template-columns: 1.1fr 1fr; gap: 3.5rem; align-items: center; }
+    .tv-heading { font-size: clamp(1.8rem, 3.5vw, 2.8rem); font-weight: 300; color: var(--white); margin-bottom: 1rem; }
+    .tv-body { color: var(--muted); font-size: .9rem; margin-bottom: 1.5rem; }
+    .tv-platforms { display: flex; gap: .75rem; flex-wrap: wrap; margin-bottom: 1.5rem; }
+    .tv-platform {
+      display: flex; align-items: center; gap: .4rem;
+      background: var(--card); border: 1px solid var(--border);
+      border-radius: 50px; padding: .4rem .9rem;
+      font-size: .78rem; font-weight: 500; color: var(--white);
+      transition: border-color .2s, color .2s;
+    }
+    .tv-platform:hover { border-color: var(--mint); color: var(--mint); }
+    .tv-embed-wrap {
+      border-radius: 14px; overflow: hidden;
+      border: 1px solid var(--border);
+      aspect-ratio: 16/9; background: var(--card);
+    }
+    .tv-embed-wrap iframe { width: 100%; height: 100%; border: none; }
+
+    /* ── SNAPCAPTION ── */
+    #snapcaption { background: var(--dark); border-top: 1px solid var(--border); }
+    .snap-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 3.5rem; align-items: center; }
+    .snap-heading { font-size: clamp(1.8rem, 3.5vw, 2.8rem); font-weight: 300; color: var(--white); margin-bottom: 1rem; }
+    .snap-heading em { color: var(--mint); font-style: italic; }
+    .snap-body { color: var(--muted); font-size: .9rem; margin-bottom: 1.25rem; }
+    .snap-list { list-style: none; display: flex; flex-direction: column; gap: .5rem; margin-bottom: 1.75rem; }
+    .snap-list li { display: flex; gap: .6rem; font-size: .85rem; color: var(--muted); }
+    .snap-list li::before { content: '✦'; color: var(--mint); flex-shrink: 0; }
+    /* 🔧 Replace .snap-ph with: <img src="snapcaption-feature.jpg" style="width:100%;border-radius:14px;border:1px solid var(--border);" /> */
+    .snap-ph {
+      background: var(--card); border: 1px solid var(--border);
+      border-radius: 14px; padding: 2rem;
+      display: flex; flex-direction: column; align-items: center;
+      gap: 1.25rem; text-align: center;
+    }
+    .snap-logo { font-family: 'Cormorant Garamond', serif; font-size: 3.5rem; color: var(--mint); font-weight: 300; }
+    .snap-logo-sub { font-size: .68rem; text-transform: uppercase; letter-spacing: .18em; color: var(--muted2); }
+    .snap-demo {
+      background: var(--black); border-radius: 10px; padding: 1rem 1.1rem;
+      text-align: left; border: 1px solid var(--border); width: 100%;
+    }
+    .snap-demo-lbl { font-size: .65rem; color: var(--mint); text-transform: uppercase; letter-spacing: .12em; margin-bottom: .35rem; }
+    .snap-demo-text { font-size: .82rem; color: var(--muted); font-style: italic; line-height: 1.5; }
+    .snap-ph-note { font-size: .65rem; color: rgba(78,241,194,.25); text-transform: uppercase; letter-spacing: .1em; }
+    .snap-early {
+      background: var(--card2); border: 1px solid var(--border);
+      border-radius: 10px; padding: 1rem 1.1rem; margin-top: .5rem;
+    }
+    .snap-early-lbl { font-size: .68rem; color: var(--mint); text-transform: uppercase; letter-spacing: .12em; margin-bottom: .3rem; }
+    .snap-early-body { font-size: .82rem; color: var(--muted); margin-bottom: .75rem; }
+
+    /* ── WORK WITH ME ── */
+    #work { background: var(--black); border-top: 1px solid var(--border); }
+    .work-inner { max-width: 580px; margin: 0 auto; text-align: center; }
+    .work-heading { font-size: clamp(1.8rem, 4vw, 3rem); font-weight: 300; color: var(--white); margin-bottom: .75rem; }
+    .work-heading em { color: var(--mint); font-style: italic; }
+    .work-sub { color: var(--muted); font-size: .9rem; margin-bottom: 2rem; }
+    .work-card {
+      background: var(--card); border: 1px solid var(--border);
+      border-radius: 18px; padding: 2.25rem 2rem;
+      position: relative; overflow: hidden;
+    }
+    .work-card::before {
+      content: '';
+      position: absolute; top: -60px; right: -60px;
+      width: 180px; height: 180px;
+      background: radial-gradient(circle, rgba(78,241,194,.06) 0%, transparent 70%);
+      border-radius: 50%;
+    }
+    .work-price { font-family: 'Cormorant Garamond', serif; font-size: 3rem; color: var(--mint); font-weight: 300; }
+    .work-name { font-size: 1rem; color: var(--white); font-weight: 600; margin: .3rem 0 .3rem; letter-spacing: .02em; }
+    .work-founding { font-size: .75rem; color: rgba(78,241,194,.6); font-style: italic; margin-bottom: 1.1rem; }
+    .work-desc { color: var(--muted); font-size: .87rem; line-height: 1.6; margin-bottom: .5rem; }
+    .work-note { font-size: .78rem; color: rgba(78,241,194,.5); font-style: italic; margin-bottom: 1.5rem; }
+    .work-email-box {
+      background: var(--black); border-radius: 10px; padding: 1.1rem 1.25rem;
+      margin-bottom: 1.5rem; border: 1px solid var(--border); text-align: left;
+    }
+    .work-email-lbl { font-size: .65rem; color: var(--muted2); text-transform: uppercase; letter-spacing: .12em; margin-bottom: .3rem; }
+    .work-email-addr { font-size: .95rem; color: var(--white); font-weight: 600; }
+    .work-email-addr a { color: var(--mint); }
+    .work-email-sub { font-size: .74rem; color: var(--muted2); margin-top: .2rem; }
+
+    /* ── CONNECT ── */
+    #connect { background: var(--dark); border-top: 1px solid var(--border); }
+    .connect-heading { font-size: clamp(1.8rem, 4vw, 3rem); font-weight: 300; color: var(--white); margin-bottom: .5rem; }
+    .connect-sub { color: var(--muted); font-size: .9rem; margin-bottom: 2.5rem; max-width: 480px; }
+    .connect-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: .9rem; }
+    .c-card {
+      border-radius: 13px; padding: 1.4rem 1.1rem;
+      display: flex; flex-direction: column; gap: .4rem;
+      color: var(--white); border: 1px solid transparent;
+      transition: transform .2s, opacity .2s;
+    }
+    .c-card:hover { transform: translateY(-3px); opacity: .92; }
+    .c-card.yt,
+    .c-card.tt,
+    .c-card.fb1,
+    .c-card.fb2,
+    .c-card.fb3,
+    .c-card.pin {
+      background: var(--card);
+      border-color: var(--border);
+    }
+    .c-card:hover {
+      background: var(--mint-dim2) !important;
+      border-color: var(--mint) !important;
+      opacity: 1;
+    }
+    .c-platform { color: var(--mint); }
+    .c-handle { color: var(--muted); }
+    .c-action { color: var(--white); }
+    .c-icon { font-size: 1.4rem; margin-bottom: .1rem; }
+    .c-platform { font-weight: 700; font-size: .88rem; }
+    .c-handle { font-size: .72rem; opacity: .7; }
+    .c-action { font-size: .7rem; font-weight: 600; margin-top: auto; opacity: .85; }
+
+    /* ── BANNER CLOSER ── */
+    #closer { padding: 0; }
+    .closer-img { width: 100%; max-height: 380px; object-fit: cover; object-position: center 20%; display: block; }
+    /* 🔧 Replace .closer-ph with: <img src="me.png" class="closer-img" alt="Shatica Miles" /> */
+    .closer-ph {
+      width: 100%; height: 340px;
+      background: linear-gradient(160deg, #060e0b, #0d1f18);
+      display: flex; align-items: center; justify-content: center;
+    }
+    .closer-ph p { font-size: .72rem; color: rgba(78,241,194,.3); text-transform: uppercase; letter-spacing: .15em; }
+    .closer-text {
+      background: linear-gradient(to bottom, rgba(8,8,8,0) 0%, var(--black) 100%);
+      text-align: center; padding: 3rem 1.5rem 4rem;
+    }
+    .closer-text h2 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(1.6rem, 4vw, 2.6rem);
+      font-weight: 300; color: var(--white); margin-bottom: .75rem;
+    }
+    .closer-text h2 em { color: var(--mint); font-style: italic; }
+    .closer-text p { color: var(--muted); font-size: .9rem; max-width: 440px; margin: 0 auto 1.75rem; }
+
+    /* ── FOOTER ── */
+    footer { background: var(--dark); border-top: 1px solid var(--border); padding: 2.5rem 0 1.5rem; }
+    .footer-inner { display: flex; flex-direction: column; align-items: center; text-align: center; gap: .85rem; }
+    .footer-logo { font-family: 'Cormorant Garamond', serif; font-size: 1.5rem; font-weight: 300; color: var(--white); }
+    .footer-logo em { color: var(--mint); font-style: italic; }
+    .footer-gas { font-style: italic; font-size: .82rem; color: var(--mint); max-width: 380px; }
+    .footer-sig { font-size: .78rem; color: var(--muted2); font-style: italic; }
+    .footer-links { display: flex; gap: 1.5rem; flex-wrap: wrap; justify-content: center; font-size: .76rem; }
+    .footer-links a { color: var(--muted2); transition: color .2s; }
+    .footer-links a:hover { color: var(--mint); }
+    .footer-copy { font-size: .72rem; color: var(--muted2); }
+
+    /* ── SCROLL FADE ── */
+    @keyframes fadeUp { from { opacity: 0; transform: translateY(18px); } to { opacity: 1; transform: translateY(0); } }
+    .fade { opacity: 0; }
+    .fade.in { animation: fadeUp .65s ease forwards; }
+
+    /* ── RESPONSIVE ── */
+    @media(max-width: 768px) {
+      .nav-links { display: none; }
+      .hamburger { display: flex; }
+      .story-grid, .tv-grid, .snap-grid { grid-template-columns: 1fr; }
+      .start-grid { grid-template-columns: 1fr; }
+      .shop-grid { grid-template-columns: 1fr 1fr; }
+      .connect-grid { grid-template-columns: 1fr 1fr; }
+      section { padding: 3.5rem 0; }
+    }
+    @media(max-width: 480px) {
+      .shop-grid, .connect-grid { grid-template-columns: 1fr; }
+    }
   </style>
 </head>
 <body>
 
+<!-- NAV -->
 <nav>
   <div class="container">
-    <a href="#home" class="nav-logo">Myss <span>T</span></a>
+    <a href="#home" class="nav-logo">Myss <em>T</em></a>
     <div class="nav-links">
-      <a href="#home">Home</a>
-      <a href="#work" class="cta-link">Work With Me</a>
+      <a href="#start">Start Here</a>
       <a href="#shop">Shop</a>
       <a href="#tv">Whose Tea TV</a>
-      <a href="#about">About</a>
-      <a href="#contact">Contact</a>
-    </div>
-    <div class="nav-social">
-      <a href="https://youtube.com/@whoseteatv" target="_blank">YT</a>
-      <a href="https://tiktok.com/@whoseteatv" target="_blank">TT</a>
-      <a href="https://facebook.com/whoseteatv1" target="_blank">FB</a>
-      <a href="https://pinterest.com/whoseteatv" target="_blank">P</a>
+      <a href="#snapcaption">SnapCaptionAI</a>
+      <a href="mailto:whosttv@gmail.com?subject=30 Minute Reset Session" class="nav-cta">Book $25 Reset</a>
     </div>
     <div class="hamburger" onclick="toggleMenu()"><span></span><span></span><span></span></div>
   </div>
 </nav>
-
 <div class="mobile-menu" id="mobileMenu">
-  <a href="#home" onclick="toggleMenu()">Home</a>
-  <a href="#work" class="cta-link" onclick="toggleMenu()">Work With Me</a>
+  <a href="#start" onclick="toggleMenu()">Start Here</a>
   <a href="#shop" onclick="toggleMenu()">Shop</a>
   <a href="#tv" onclick="toggleMenu()">Whose Tea TV</a>
-  <a href="#about" onclick="toggleMenu()">About</a>
-  <a href="#course" onclick="toggleMenu()">Course</a>
+  <a href="#snapcaption" onclick="toggleMenu()">SnapCaptionAI</a>
   <a href="#connect" onclick="toggleMenu()">Connect</a>
-  <a href="#contact" onclick="toggleMenu()">Contact</a>
+  <a href="mailto:whosttv@gmail.com?subject=30 Minute Reset Session" class="nav-cta" onclick="toggleMenu()">Book $25 Reset</a>
 </div>
 
-<section id="home">
-  <div class="container">
-    <div class="hero-inner">
-      <div>
-        <p class="hero-tag fade-up">✦ Creator. Maker. Guide.</p>
-        <h1 class="hero-title fade-up delay-1">Shatica Miles<br/><em>Myss T</em></h1>
-        <p class="hero-sub fade-up delay-2">I help you <strong>stop hesitating and start executing.</strong></p>
-        <p class="hero-brand-line fade-up delay-2">I am the gas station. I fill you up so you can move.<br/>You still have to drive.</p>
-        <div class="hero-cta fade-up delay-3">
-          <a href="#work" class="btn btn-mint">Book a 30 Minute Call</a>
-          <a href="#shop" class="btn btn-outline">Shop Garden to Skin</a>
-          <a href="#tv" class="btn btn-ghost">Watch Whose Tea TV</a>
-        </div>
-        <div class="hero-badges fade-up delay-4">
-          <span class="badge">🧴 Garden to Skin</span>
-          <span class="badge">📺 Whose Tea TV</span>
-          <span class="badge">🌿 Midlife Reset</span>
-          <span class="badge">📞 1:1 Calls</span>
-        </div>
+<!-- HERO -->
+<section id="home" style="padding:0;">
+  <div class="hero-banner-wrap">
+    <!-- 🔧 HEADER PHOTO: Replace .hero-ph div with:
+         <img src="me.png" alt="Shatica Miles" style="width:100%;max-height:500px;object-fit:cover;object-position:center 20%;display:block;" />
+    -->
+    <div class="hero-ph">
+      <div class="hero-ph-text">
+        <p>🔧 Drop your header photo here</p>
+        <span>Replace with &lt;img src="me.png"&gt;</span>
       </div>
-      <div class="hero-image fade-up delay-2">
-        <!-- 🔧 Replace with your photo: <img src="images/shatica-hero.jpg" alt="Shatica Miles" /> -->
-        <div class="hero-image fade-up delay-2">
-  <img src="images/shatica-hero.jpg" alt="Shatica Miles">
-</div>
-      </div>
+    </div>
+  </div>
+  <div class="hero-text-block">
+    <h1 class="hero-name">Shatica Miles <em>· Myss T</em></h1>
+    <p class="hero-role">Creator · Maker · Guide · Pittsburgh, PA</p>
+    <p class="hero-tagline">
+      <strong>I am the gas station.</strong><br/>
+      I fill you up so you can move.<br/>
+      You still have to drive.
+    </p>
+    <p class="hero-recognition">For the people who hold everything together while quietly falling apart themselves.</p>
+    <div class="hero-btns">
+      <a href="#start" class="btn btn-mint">Start Here</a>
+      <a href="#shop" class="btn btn-ghost">Shop Garden to Skin</a>
     </div>
   </div>
 </section>
 
+<!-- TICKER -->
 <div class="ticker-wrap" aria-hidden="true">
   <div class="ticker-track">
-    <span>Stop Hesitating</span><span>✦</span><span>Start Executing</span><span>✦</span>
-    <span>Whose Tea TV</span><span>✦</span><span>Garden to Skin</span><span>✦</span>
-    <span>Book a 30 Min Call</span><span>✦</span><span>Midlife Reset</span><span>✦</span>
-    <span>Stop Abandoning Yourself</span><span>✦</span><span>Ships US · Canada · UK</span><span>✦</span>
-    <span>Stop Hesitating</span><span>✦</span><span>Start Executing</span><span>✦</span>
-    <span>Whose Tea TV</span><span>✦</span><span>Garden to Skin</span><span>✦</span>
-    <span>Book a 30 Min Call</span><span>✦</span><span>Midlife Reset</span><span>✦</span>
-    <span>Stop Abandoning Yourself</span><span>✦</span><span>Ships US · Canada · UK</span><span>✦</span>
+    <span>Infinite Storefront</span><span>✦</span>
+    <span>Whose Tea TV</span><span>✦</span>
+    <span>SnapCaptionAI</span><span>✦</span>
+    <span>This is not self help talk</span><span>✦</span>
+    <span>This is the conversation that was missing</span><span>✦</span>
+    <span>Stop Abandoning Yourself</span><span>✦</span>
+    <span>The Loyalty Tax</span><span>✦</span>
+    <span>Reset Sessions $25 thru 08/31</span><span>✦</span>
+    <span>MoCRA Registered</span><span>✦</span>
+    <span>Garden to Skin</span><span>✦</span>
+    <span>Infinite Storefront</span><span>✦</span>
+    <span>Whose Tea TV</span><span>✦</span>
+    <span>SnapCaptionAI</span><span>✦</span>
+    <span>This is not self help talk</span><span>✦</span>
+    <span>This is the conversation that was missing</span><span>✦</span>
+    <span>Stop Abandoning Yourself</span><span>✦</span>
+    <span>The Loyalty Tax</span><span>✦</span>
+    <span>Reset Sessions $25 thru 08/31</span><span>✦</span>
+    <span>MoCRA Registered</span><span>✦</span>
+    <span>Garden to Skin</span><span>✦</span>
   </div>
 </div>
 
-<section id="work">
+<!-- START HERE -->
+<section id="start">
   <div class="container">
-    <div class="work-inner">
-      <p class="section-label">Work With Me</p>
-      <h2>Done Thinking.<br/><em>Ready to Move?</em></h2>
-      <p class="work-lead">If you are done thinking and ready to move, this is for you.</p>
-      <p class="work-desc">You bring your idea, your plan, or your confusion. I listen and send you back a clear path you can actually follow.</p>
-      <div class="offer-box">
-        <div class="offer-price">$100</div>
-        <div class="offer-name">30 Minute Execution Call</div>
-        <p class="offer-desc">One focused session. Real clarity. No fluff, no filler — just the next steps that make sense for where you are right now.</p>
-        <p class="offer-note">This only works if you take action after.</p>
-        <a href="https://calendly.com/shaticamiles/30min" class="btn btn-mint" target="_blank" rel="noopener">
-Book Your 30 Minute Call
-</a>
+    <div class="start-inner">
+      <span class="eyebrow">Start Here</span>
+      <h2 class="start-heading fade">Tired of Holding<br/><em>Everything Together?</em></h2>
+      <p class="start-sub fade">You found the right place. This is where the real conversation starts. Pick where you need to begin.</p>
+      <div class="start-grid">
+        <a href="https://youtube.com/channel/UCwkV6bqOZZSDLq8XW4ySjHg" target="_blank" class="start-card fade">
+          <div class="start-card-icon">📺</div>
+          <div class="start-card-label">Best Video</div>
+          <div class="start-card-title">Watch Whose Tea TV</div>
+          <div class="start-card-desc">Start with the conversation that explains everything. High achievers, burnout, and the cost of carrying everyone.</div>
+          <div class="start-card-cta">Watch on YouTube →</div>
+        </a>
+        <a href="https://www.ifssoap.com/products/handmade-reset-glow-bundle?variant=47786752508125" target="_blank" class="start-card fade">
+          <div class="start-card-icon">🎁</div>
+          <div class="start-card-label">Reset Bundle</div>
+          <div class="start-card-title">Handmade Reset Glow Bundle</div>
+          <div class="start-card-desc">Soap, body balm, and lip balm. Something real and grounding while you figure things out.</div>
+          <div class="start-card-cta">Shop the bundle →</div>
+        </a>
+        <a href="https://whoseteatv.gumroad.com/l/npimxd" target="_blank" class="start-card fade">
+          <div class="start-card-icon">📖</div>
+          <div class="start-card-label">Reset Guide — $9.99</div>
+          <div class="start-card-title">You Work Too Hard for a Life That Ignores You</div>
+          <div class="start-card-desc">The guide for the person who shows up for everyone and keeps disappearing for themselves.</div>
+          <div class="start-card-cta">Get the guide →</div>
+        </a>
+        <a href="mailto:whosttv@gmail.com?subject=30 Minute Reset Session" class="start-card fade">
+          <div class="start-card-icon">📞</div>
+          <div class="start-card-label">1:1 Session — $25</div>
+          <div class="start-card-title">30 Minute Reset Session</div>
+          <div class="start-card-desc">One focused conversation. Real clarity. Real direction. Founding rate through August 31.</div>
+          <div class="start-card-cta">Email to book →</div>
+        </a>
       </div>
     </div>
   </div>
 </section>
 
-<section id="about">
+<!-- CREATION STORY -->
+<section id="story">
   <div class="container">
-    <div class="about-grid">
-      <div class="about-image">
-        <!-- 🔧 Replace with your photo: <img src="images/shatica-about.jpg" alt="Shatica Miles" /> -->
-        <div class="about-image">
-  <img src="images/shatica-about.jpg" alt="Shatica Miles">
-</div>
+    <div class="story-grid">
+      <!-- 🔧 ABOUT PHOTO: Replace .story-ph with your image
+           <div class="story-ph"><img src="shatica-hero.jpg" alt="Shatica Miles" /></div>
+      -->
+      <div class="story-ph fade">
+        <span>📷</span>
+        <span>Upload your about photo</span>
       </div>
       <div>
-        <p class="section-label">About Myss T</p>
-        <h2 class="about-title">I Walked Away to Rebuild — On My Own Terms</h2>
-        <p class="about-body">Shatica Miles — known as Myss T — is a creator and entrepreneur who left a 23-year career to rebuild life on her own terms. She is the voice behind Whose Tea TV, where lived experience meets real change.</p>
-        <p class="about-body">Through Whose Tea TV and her Garden to Skin brand, she turns real life shifts into clear, usable growth — empowering people to stop performing and start living with intention.</p>
-        <a href="#work" class="btn btn-mint">Work With Me</a>
-        <div class="framework-card">
-          <h4>🔄 The Midlife Reset Framework</h4>
-          <p>A grounded path for women ready to stop abandoning themselves and start living on their own terms.</p>
+        <span class="eyebrow">The Story</span>
+        <h2 class="story-heading fade">After 23 Years Building<br/><em>Everyone Else's Vision</em></h2>
+        <p class="story-body fade">Shatica Miles spent 23 years in corporate America. She showed up. She delivered. She trained every boss she ever had — and was never given the position.</p>
+        <p class="story-body fade">She was the person everything ran through. The one they called indispensable. The one they called family — right up until it was time to pay her what she was worth.</p>
+        <div class="story-quote fade">
+          <p>"You show up for everyone. You hold it together. You fix it. You deliver. And somehow you are still the one who is drained."</p>
+          <cite>— Myss T</cite>
         </div>
-        <div class="framework-card" style="margin-top:.75rem">
-          <h4>🚫 Stop Abandoning Yourself</h4>
-          <p>The method at the heart of everything — boundaries, identity, and radical self-return.</p>
-        </div>
+        <p class="story-body fade">She walked away and rebuilt her life from scratch. Three brands. A garden. A channel. An app. All of it built on one truth: you cannot keep pouring from an empty cup.</p>
+        <p class="story-body fade" style="color:var(--mint);font-style:italic;">This is not self help talk. This is the conversation that was missing.</p>
       </div>
     </div>
   </div>
 </section>
 
+<!-- THE ENEMY -->
+<section id="enemy">
+  <div class="container">
+    <div class="enemy-inner">
+      <span class="eyebrow">What We're Up Against</span>
+      <h2 class="enemy-heading fade">The Real <em>Enemy</em></h2>
+      <p class="enemy-intro fade">It does not have one face. But you know it when you feel it.</p>
+      <div class="enemy-list">
+        <div class="enemy-item fade">
+          <div class="enemy-bullet"></div>
+          <div class="enemy-text">
+            <strong>The Loyalty Tax</strong>
+            <span>Staying put while the world moves on. Giving more than you get. Waiting for the system to reward what it was always going to exploit.</span>
+          </div>
+        </div>
+        <div class="enemy-item fade">
+          <div class="enemy-bullet"></div>
+          <div class="enemy-text">
+            <strong>Self Abandonment</strong>
+            <span>Performing strength while quietly disappearing inside. Being useful to everyone and invisible to yourself.</span>
+          </div>
+        </div>
+        <div class="enemy-item fade">
+          <div class="enemy-bullet"></div>
+          <div class="enemy-text">
+            <strong>The Dependability Trap</strong>
+            <span>Being dependable should not cost you your entire personality. Being strong should not mean being last.</span>
+          </div>
+        </div>
+        <div class="enemy-item fade">
+          <div class="enemy-bullet"></div>
+          <div class="enemy-text">
+            <strong>Living Useful but Unlived</strong>
+            <span>A life that fits everyone else perfectly. That feels like a costume. That looks successful from the outside while feeling empty from the inside.</span>
+          </div>
+        </div>
+      </div>
+      <p class="enemy-closer fade">You are not broken. You are <em>overloaded</em>.<br/>You are not behind. You are <em>recovering</em>.</p>
+    </div>
+  </div>
+</section>
+
+<!-- THE CREED -->
+<section id="creed">
+  <div class="container">
+    <div class="creed-inner">
+      <span class="eyebrow">The Creed</span>
+      <h2 class="creed-heading fade">What We Believe</h2>
+      <p class="creed-sub fade">These are not affirmations. They are permissions.</p>
+      <div class="creed-list">
+        <div class="creed-line fade"><span class="creed-num">01</span><p>You can stop abandoning yourself now.</p></div>
+        <div class="creed-line fade"><span class="creed-num">02</span><p>Being dependable should not cost you your identity.</p></div>
+        <div class="creed-line fade"><span class="creed-num">03</span><p>You are allowed to rebuild your life.</p></div>
+        <div class="creed-line fade"><span class="creed-num">04</span><p>The praise was never going to pay your bills.</p></div>
+        <div class="creed-line fade"><span class="creed-num">05</span><p>You are not lazy. You are exhausted from carrying people who clap for you while draining you.</p></div>
+        <div class="creed-line fade"><span class="creed-num">06</span><p>Your loyalty is a valuable asset. Stop giving it away for free.</p></div>
+        <div class="creed-line fade"><span class="creed-num">07</span><p>This is not self help talk. This is the conversation that was missing.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SHOP -->
 <section id="shop">
   <div class="container">
-    <div class="shop-header">
-      <p class="section-label">Garden to Skin</p>
-      <h2>Handcrafted with Intention</h2>
-      <p style="color:var(--text-muted)">Rooted in a true garden-to-skin process.</p>
-    </div>
-    <div class="shop-origin">
-      <strong>These products were created while I was rebuilding my own life.</strong>
-      Something real to ground me while I figured things out. That is what Garden to Skin is — it is part of the story, not separate from it.
-    </div>
-    <div class="products-grid">
-
-  <div class="product-card">
-    <div class="product-img">
-      <img src="images/BTP 2 oz Lemongrass Body Balm.png" alt="Nourishing Balm">
-    </div>
-    <div class="product-body">
-      <p class="product-name">Nourishing Balm</p>
-      <p class="product-desc">Rich, skin-loving formula for dry elbows, heels, and lips. Handcrafted in small batches.</p>
-      <div class="product-footer">
-        <span class="product-price">$10.00</span>
-        <button class="btn btn-mint" onclick="addToCart('Nourishing Balm',18)">Add to Cart</button>
+    <span class="eyebrow">Garden to Skin</span>
+    <h2 class="shop-heading fade">Physical Restoration</h2>
+    <p class="shop-sub fade">Grown in my own garden. MoCRA-registered. Made in small batches while I was rebuilding my own life — and that intention is in every product.</p>
+    <div class="shop-grid">
+      <div class="product-card fade">
+        <!-- 🔧 Upload lemongrass balm photo → replace .product-ph with <img> -->
+        <div class="product-img">
+          <div class="product-ph"><span>🧴</span><span>Upload balm photo</span></div>
+        </div>
+        <div class="product-body">
+          <p class="product-name">Lemongrass Mint Body Balm</p>
+          <p class="product-desc">Rich herbal balm for dry skin. Handcrafted in small batches.</p>
+          <div class="product-foot">
+            <span class="product-price">From $10</span>
+            <a href="https://www.ifssoap.com/products/btp-lemongrass-mint-body-balm-dry-skin?variant=47312214589661" target="_blank" class="product-btn">Shop Now</a>
+          </div>
+        </div>
+      </div>
+      <div class="product-card fade">
+        <!-- 🔧 Upload cucumber soap photo → replace .product-ph with <img> -->
+        <div class="product-img">
+          <div class="product-ph"><span>🧼</span><span>Upload soap photo</span></div>
+        </div>
+        <div class="product-body">
+          <p class="product-name">Cucumber Bliss Soap</p>
+          <p class="product-desc">Gentle bars free from harsh chemicals. Scented with real botanicals.</p>
+          <div class="product-foot">
+            <span class="product-price">$8</span>
+            <a href="https://www.ifssoap.com/products/cucumber-bliss-handmade-soap?variant=47312499704029" target="_blank" class="product-btn">Shop Now</a>
+          </div>
+        </div>
+      </div>
+      <div class="product-card fade">
+        <!-- 🔧 Upload glow bundle photo → replace .product-ph with <img> -->
+        <div class="product-img">
+          <div class="product-ph"><span>🎁</span><span>Upload bundle photo</span></div>
+        </div>
+        <div class="product-body">
+          <p class="product-name">Handmade Reset Glow Bundle</p>
+          <p class="product-desc">Soap, balm, and lip balm. Perfect for gifting or a full reset ritual.</p>
+          <div class="product-foot">
+            <span class="product-price">$35</span>
+            <a href="https://www.ifssoap.com/products/handmade-reset-glow-bundle?variant=47786752508125" target="_blank" class="product-btn">Shop Now</a>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-
-  <div class="product-card">
-    <div class="product-img">
-      <img src="images/Cucumber_Bliss Soap.webp" alt="Artisan Soap Bar">
-    </div>
-    <div class="product-body">
-      <p class="product-name">Artisan Soap Bar</p>
-      <p class="product-desc">Gentle, moisturizing bars free from harsh chemicals. Scented with real botanicals.</p>
-      <div class="product-footer">
-        <span class="product-price">$8.00</span>
-        <button class="btn btn-mint" onclick="addToCart('Artisan Soap Bar',12)">Add to Cart</button>
-      </div>
-    </div>
-  </div>
-
-  <div class="product-card">
-    <div class="product-img">
-      <img src="images/Glow Bundle.jpg" alt="Glow Bundle">
-    </div>
-    <div class="product-body">
-      <p class="product-name">Glow Bundle</p>
-      <p class="product-desc">Balm + Soap set — perfect for gifting or a full self-care ritual.</p>
-      <div class="product-footer">
-        <span class="product-price">$35.00</span>
-        <button class="btn btn-mint" onclick="addToCart('Glow Bundle',28)">Add to Cart</button>
-      </div>
-    </div>
-  </div>
-
-</div>
-    <div id="cart-bar">
-      <div>
-        <strong id="cart-summary" style="color:#fff">Cart: 0 items</strong>
-        <span style="color:var(--accent);font-size:.85rem;margin-left:.75rem" id="cart-total">$0.00</span>
-      </div>
-      <div style="display:flex;gap:.75rem;flex-wrap:wrap">
-        <a href="#" class="btn btn-mint">Checkout via Stripe →</a>
-        <a href="#" class="btn btn-outline">Pay with PayPal →</a>
-      </div>
+    <div class="shop-footer fade">
+      <a href="https://ifssoap.com" target="_blank">See the full collection at ifssoap.com →</a>
     </div>
   </div>
 </section>
 
+<!-- WHOSE TEA TV -->
 <section id="tv">
   <div class="container">
     <div class="tv-grid">
       <div>
-        <p class="section-label">Watch & Listen</p>
-        <h2 class="tv-title">Whose Tea TV</h2>
-        <p class="tv-sub">Real conversations for women who are done being last on their own list. Unfiltered tea on midlife, money, mindset, and more.</p>
-        <div class="tv-platforms">
-          <a href="https://youtube.com/@whoseteatv" target="_blank">▶ YouTube</a>
-          <a href="https://tiktok.com/@whoseteatv" target="_blank">♪ TikTok</a>
-          <a href="https://pinterest.com/whoseteatv" target="_blank">📌 Pinterest</a>
-          <a href="https://facebook.com/whoseteatv1" target="_blank">📘 Facebook</a>
+        <span class="eyebrow">The Front Door</span>
+        <h2 class="tv-heading fade">Whose Tea TV</h2>
+        <p class="tv-body fade">Real conversations for people who are done being last on their own list. This is where burnout, boundaries, self trust, and identity after usefulness get talked about without the filter.</p>
+        <p class="tv-body fade" style="font-style:italic;color:var(--mint);">For the one who always holds it together but is tired of being the one everything falls on.</p>
+        <div class="tv-platforms fade">
+          <a href="https://youtube.com/channel/UCwkV6bqOZZSDLq8XW4ySjHg" target="_blank" class="tv-platform">▶ YouTube</a>
+          <a href="https://www.tiktok.com/@whoseteatv" target="_blank" class="tv-platform">♪ TikTok</a>
+          <a href="https://www.facebook.com/whoseteatv1/" target="_blank" class="tv-platform">f Facebook</a>
+          <a href="https://www.pinterest.com/whosetea/" target="_blank" class="tv-platform">P Pinterest</a>
         </div>
       </div>
-      <div class="tv-embed">
-  <iframe width="100%" height="400" style="border-radius:12px"
-    src="https://www.youtube.com/embed/ZMHRssR2oRk"
-    title="Whose Tea TV"
-    frameborder="0"
-    allowfullscreen>
-  </iframe>
-</div>
-</section>
-
-<section id="shipping">
-  <div class="container">
-    <p class="section-label" style="text-align:center">Shipping</p>
-    <h2 style="text-align:center;font-size:clamp(1.8rem,3vw,2.4rem);margin-bottom:.5rem;color:#fff">We Ship Worldwide</h2>
-    <p style="text-align:center;color:var(--text-muted);max-width:500px;margin:0 auto">
-      Every order is packed with care and shipped to your door.
-    </p>
-
-    <div class="shipping-grid">
-      <div class="ship-card">
-        <div class="ship-flag">🇺🇸</div>
-        <p class="ship-country">United States</p>
-        <p class="ship-details">
-          Small batch orders ship in 1 to 3 business days.<br/>
-          Delivery typically arrives within 3 to 5 business days.<br/>
-          Free shipping on orders over $50.
-        </p>
-      </div>
-
-      <div class="ship-card">
-        <div class="ship-flag">🇨🇦</div>
-        <p class="ship-country">Canada</p>
-        <p class="ship-details">
-          Orders are carefully packed and shipped within 1 to 3 business days.<br/>
-          Delivery usually takes 6 to 10 business days.<br/>
-          Shipping calculated at checkout. Duties may apply.
-        </p>
-      </div>
-
-      <div class="ship-card">
-        <div class="ship-flag">🇬🇧</div>
-        <p class="ship-country">United Kingdom</p>
-        <p class="ship-details">
-          Handcrafted items ship within 1 to 3 business days.<br/>
-          Delivery typically takes 6 to 10 business days.<br/>
-          Shipping calculated at checkout. VAT or duties may apply.
-        </p>
+      <div class="tv-embed-wrap fade">
+        <iframe src="https://www.youtube.com/embed/ZMHRssR2oRk" title="Whose Tea TV" allowfullscreen></iframe>
       </div>
     </div>
   </div>
 </section>
 
-<section id="course">
+<!-- SNAPCAPTION AI -->
+<section id="snapcaption">
   <div class="container">
-    <div class="course-inner">
-      <p class="section-label">Resource + Course</p>
-      <h2>Join the Midlife Reset Movement</h2>
-      <p>Get your resource for $9.99 <strong style="color:#fff">Stop Abandoning Yourself</strong> starter guide — plus be the first to know when the full course opens.</p>
-      <form class="email-form" onsubmit="handleEmailSignup(event)">
-        <input type="email" placeholder="your@email.com" required aria-label="Email address" />
-        <button type="submit" class="btn btn-mint">Get Instant Access</button>
-      </form>
-      <p id="signup-msg" style="margin-top:1rem;color:var(--accent);font-weight:500;display:none">✅ You're in! Check your inbox.</p>
-      <div class="course-perks">
-        <div class="perk"><div class="perk-icon">🎯</div><h4>Midlife Reset</h4><p>A full framework for reclaiming your identity and energy.</p></div>
-        <div class="perk"><div class="perk-icon">🚫</div><h4>Stop Abandoning Yourself</h4><p>Weekly lessons on boundaries, self-trust, and joy.</p></div>
-        <div class="perk"><div class="perk-icon">🌿</div><h4>Community Access</h4><p>Connect with women on the same journey.</p></div>
+    <div class="snap-grid">
+      <div>
+        <span class="eyebrow">Voice Preservation</span>
+        <h2 class="snap-heading fade"><em>Your voice.</em><br/>Your content.</h2>
+        <p class="snap-body fade">Built because AI tools were erasing what makes creators irreplaceable. SnapCaptionAI was made so your content sounds like you — not like everyone else who used the same tool.</p>
+        <ul class="snap-list">
+          <li class="fade">Captions in your voice — not a robot's</li>
+          <li class="fade">Multi-persona system tied to your content style</li>
+          <li class="fade">Built by a creator who refused to lose her voice</li>
+          <li class="fade">Web app live now at snapcaptionai.com</li>
+        </ul>
+        <div style="display:flex;flex-direction:column;gap:.75rem;">
+          <a href="https://snapcaptionai.com" target="_blank" class="btn btn-mint fade">Try SnapCaptionAI</a>
+          <div class="snap-early fade">
+            <p class="snap-early-lbl">Get Early Access Updates</p>
+            <p class="snap-early-body">Be first to know when the mobile app launches.</p>
+            <a href="mailto:whosttv@gmail.com?subject=SnapCaptionAI Early Access" class="btn btn-ghost" style="font-size:.8rem;padding:.5rem 1.1rem;">Email for Early Access</a>
+          </div>
+        </div>
+      </div>
+      <!-- 🔧 SNAPCAPTION GRAPHIC: Replace .snap-ph with your feature image
+           <img src="snapcaption-feature.jpg" style="width:100%;border-radius:14px;border:1px solid var(--border);" />
+      -->
+      <div class="snap-ph fade">
+        <div class="snap-logo">SC</div>
+        <div class="snap-logo-sub">SnapCaptionAI</div>
+        <div class="snap-demo">
+          <div class="snap-demo-lbl">Generated in your voice</div>
+          <div class="snap-demo-text">"Some of y'all are not lazy. You are exhausted from carrying people who clap for you while draining you."</div>
+        </div>
+        <p class="snap-ph-note">🔧 Replace with your feature graphic</p>
       </div>
     </div>
   </div>
 </section>
 
+<!-- WORK WITH ME -->
+<section id="work">
+  <div class="container">
+    <div class="work-inner">
+      <span class="eyebrow">Work With Me</span>
+      <h2 class="work-heading fade">Done Thinking.<br/><em>Ready to Move?</em></h2>
+      <p class="work-sub fade">Here you learn how to stop over giving, rebuild your direction, and start moving forward with clarity and control.</p>
+      <div class="work-card fade">
+        <div class="work-price">$25</div>
+        <div class="work-name">30 Minute Reset Session</div>
+        <p class="work-founding">Founding rate through August 31 · Limited weekly spots</p>
+        <p class="work-desc">For the people who hold everything together for everybody else while quietly losing themselves in the process.</p>
+        <p class="work-desc" style="margin-top:.4rem;">One focused conversation. Real clarity. Real direction. No fluff.</p>
+        <p class="work-note">Limited weekly spots available.</p>
+        <div class="work-email-box">
+          <p class="work-email-lbl">To book your session</p>
+          <p class="work-email-addr">Email: <a href="mailto:whosttv@gmail.com?subject=30 Minute Reset Session">whosttv@gmail.com</a></p>
+          <p class="work-email-sub">Subject line: 30 Minute Reset Session</p>
+        </div>
+        <a href="mailto:whosttv@gmail.com?subject=30 Minute Reset Session" class="btn btn-mint">Email to Book Your Session</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONNECT -->
 <section id="connect">
   <div class="container">
-    <div class="connect-header">
-      <p class="section-label">Follow Along</p>
-      <h2 style="font-size:clamp(1.8rem,3vw,2.4rem)">Let's Stay Connected</h2>
-      <p style="color:var(--text-muted)">Find me across the platforms — I'd love to see you there.</p>
-    </div>
-    <div class="social-cards">
-      <a href="https://youtube.com/@whoseteatv" target="_blank" class="social-card yt">
-        <div class="social-icon">▶</div><div class="social-name">YouTube</div>
-        <div class="social-handle">Whose Tea TV</div><div class="social-cta">Watch now →</div>
+    <span class="eyebrow">The Ecosystem</span>
+    <h2 class="connect-heading fade">Different Rooms.<br/>Same House.</h2>
+    <p class="connect-sub fade">Every platform is a different entry point into the same conversation. Find the one that fits where you are right now.</p>
+    <div class="connect-grid">
+      <a href="https://youtube.com/channel/UCwkV6bqOZZSDLq8XW4ySjHg" target="_blank" class="c-card yt fade">
+        <div class="c-icon">▶</div>
+        <div class="c-platform">YouTube</div>
+        <div class="c-handle">Whose Tea TV</div>
+        <div class="c-action">Watch now →</div>
       </a>
-      <a href="https://tiktok.com/@whoseteatv" target="_blank" class="social-card tt">
-        <div class="social-icon">♪</div><div class="social-name">TikTok</div>
-        <div class="social-handle">@shaticamiles</div><div class="social-cta">Catch the clips →</div>
+      <a href="https://www.tiktok.com/@whoseteatv" target="_blank" class="c-card tt fade">
+        <div class="c-icon">♪</div>
+        <div class="c-platform">TikTok</div>
+        <div class="c-handle">@whoseteatv</div>
+        <div class="c-action">Catch the clips →</div>
       </a>
-      <a href="https://facebook.com/whoseteatv1" target="_blank" class="social-card fb">
-        <div class="social-icon">f</div><div class="social-name">Facebook</div>
-        <div class="social-handle">Shatica Miles</div><div class="social-cta">Join the community →</div>
+      <a href="https://www.facebook.com/whoseteatv1/" target="_blank" class="c-card fb1 fade">
+        <div class="c-icon">📺</div>
+        <div class="c-platform">Facebook</div>
+        <div class="c-handle">Whose Tea TV Page</div>
+        <div class="c-action">Follow the channel →</div>
       </a>
-      <a href="https://pinterest.com/whoseteatv" target="_blank" class="social-card pin">
-        <div class="social-icon">P</div><div class="social-name">Pinterest</div>
-        <div class="social-handle">@shaticamiles</div><div class="social-cta">Save the inspiration →</div>
+      <a href="https://www.facebook.com/ShaticaMiles/" target="_blank" class="c-card fb2 fade">
+        <div class="c-icon">👤</div>
+        <div class="c-platform">Facebook</div>
+        <div class="c-handle">Shatica Miles</div>
+        <div class="c-action">Follow me personally →</div>
       </a>
-    </div>
-  </div>
-</section>
-
-<section id="contact">
-  <div class="container">
-    <div class="contact-grid">
-      <div class="contact-info">
-        <p class="section-label">Get in Touch</p>
-        <h2>Let's Talk</h2>
-        <p>Question about an order, a collab, or ready to book a call? I'm here.</p>
-        <div class="contact-links">
-          <div class="contact-link"><span>✉️</span> hello@shaticamiles.com</div>
-          <div class="contact-link"><span>🌐</span> ifssoap.com</div>
-          <div class="contact-link"><span>📺</span> Whose Tea TV — new episodes weekly</div>
-        </div>
-      </div>
-      <form class="contact-form" onsubmit="handleContact(event)">
-        <div class="form-group"><label>Your Name</label><input type="text" placeholder="First Last" required /></div>
-        <div class="form-group"><label>Email Address</label><input type="email" placeholder="you@email.com" required /></div>
-        <div class="form-group"><label>Message</label><textarea rows="5" placeholder="What's on your mind?" required></textarea></div>
-        <button type="submit" class="btn btn-mint">Send Message</button>
-        <p id="contact-msg" style="color:var(--accent);font-weight:500;display:none">✅ Message sent! I'll be in touch soon.</p>
-      </form>
+      <a href="https://www.facebook.com/InfiniteStorefront/" target="_blank" class="c-card fb3 fade">
+        <div class="c-icon">🧴</div>
+        <div class="c-platform">Facebook</div>
+        <div class="c-handle">Infinite Storefront</div>
+        <div class="c-action">Shop updates →</div>
+      </a>
+      <a href="https://www.pinterest.com/whosetea/" target="_blank" class="c-card pin fade">
+        <div class="c-icon">P</div>
+        <div class="c-platform">Pinterest</div>
+        <div class="c-handle">@whosetea</div>
+        <div class="c-action">Save the inspiration →</div>
+      </a>
     </div>
   </div>
 </section>
 
+<!-- BANNER CLOSER -->
+<section id="closer">
+  <!-- 🔧 BANNER: Replace .closer-ph with: <img src="me.png" class="closer-img" alt="Shatica Miles" /> -->
+  <div class="closer-ph">
+    <p>🔧 Your banner image goes here — drop me.png</p>
+  </div>
+  <div class="closer-text">
+    <h2>The Gas Station.<br/><em>Fuel for your next chapter.</em></h2>
+    <p>You show up for everyone. You hold it together. You fix it. You deliver.<br/>Now it is your turn.</p>
+    <a href="mailto:whosttv@gmail.com?subject=30 Minute Reset Session" class="btn btn-mint">Book Your $25 Reset Session</a>
+  </div>
+</section>
+
+<!-- FOOTER -->
 <footer>
   <div class="container">
-    <div class="footer-top">
-      <div>
-        <div class="footer-brand">Myss <span>T</span></div>
-        <p class="footer-tagline">Creator. Maker. Guide.<br/>Whose Tea TV · Garden to Skin · Midlife Reset</p>
-        <p class="footer-gas">I am the gas station. I fill you up so you can move. You still have to drive.</p>
-        <div class="footer-social">
-          <a href="https://youtube.com/@whoseteatv" target="_blank">YT</a>
-          <a href="https://tiktok.com/@whoseteatv" target="_blank">TT</a>
-          <a href="https://facebook.com/whoseteatv1" target="_blank">FB</a>
-          <a href="https://pinterest.com/whoseteatv" target="_blank">P</a>
-        </div>
+    <div class="footer-inner">
+      <div class="footer-logo">Myss <em>T</em></div>
+      <p class="footer-gas">I am the gas station. I fill you up so you can move. You still have to drive.</p>
+      <p class="footer-sig">This is not self help talk. This is the conversation that was missing.</p>
+      <div class="footer-links">
+        <a href="https://ifssoap.com" target="_blank">ifssoap.com</a>
+        <a href="https://snapcaptionai.com" target="_blank">SnapCaptionAI</a>
+        <a href="https://whoseteatv.gumroad.com/l/sbvrya" target="_blank">Stop Abandoning Yourself</a>
+        <a href="https://whoseteatv.gumroad.com/l/npimxd" target="_blank">You Work Too Hard ($9.99)</a>
+        <a href="mailto:whosttv@gmail.com">whosttv@gmail.com</a>
       </div>
-      <div class="footer-col">
-        <h4>Work</h4>
-        <a href="#work">Book a Call</a>
-        <a href="#course">Midlife Reset</a>
-        <a href="#course">Stop Abandoning Yourself</a>
-      </div>
-      <div class="footer-col">
-        <h4>Shop</h4>
-        <a href="#shop">Balms</a><a href="#shop">Soaps</a>
-        <a href="#shop">Bundles</a><a href="#shipping">Shipping</a>
-      </div>
-      <div class="footer-col">
-        <h4>Watch</h4>
-        <a href="#tv">Whose Tea TV</a>
-        <a href="https://youtube.com/@YOUR_HANDLE" target="_blank">YouTube</a>
-        <a href="https://tiktok.com/@YOUR_HANDLE" target="_blank">TikTok</a>
-        <a href="#about">About Myss T</a>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <p>© 2025 Shatica Miles. All rights reserved.</p>
-      <div style="display:flex;gap:1.5rem">
-        <a href="#">Privacy Policy</a><a href="#">Terms</a><a href="#">Refund Policy</a>
-      </div>
+      <p class="footer-copy">© 2025 Shatica Miles. All rights reserved.</p>
     </div>
   </div>
 </footer>
 
 <script>
-  function toggleMenu(){document.getElementById('mobileMenu').classList.toggle('open')}
-
-  let cart=[];
-  function addToCart(name,price){
-    cart.push({name,price});
-    const bar=document.getElementById('cart-bar');
-    bar.style.display='flex';
-    const total=cart.reduce((s,i)=>s+i.price,0);
-    document.getElementById('cart-summary').textContent=`Cart: ${cart.length} item${cart.length>1?'s':''}`;
-    document.getElementById('cart-total').textContent=`$${total.toFixed(2)}`;
+  function toggleMenu() {
+    document.getElementById('mobileMenu').classList.toggle('open');
   }
-
-  function handleEmailSignup(e){
-    e.preventDefault();
-    document.getElementById('signup-msg').style.display='block';
-    e.target.reset();
-  }
-
-  function handleContact(e){
-    e.preventDefault();
-    document.getElementById('contact-msg').style.display='block';
-    e.target.reset();
-  }
-
-  const observer=new IntersectionObserver((entries)=>{
-    entries.forEach(e=>{
-      if(e.isIntersecting){e.target.style.animation='fadeUp .65s ease forwards';e.target.style.opacity='1'}
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
     });
-  },{threshold:0.12});
-  document.querySelectorAll('.product-card,.ship-card,.perk,.social-card,.framework-card,.offer-box')
-    .forEach(el=>{el.style.opacity='0';observer.observe(el)});
+  }, { threshold: 0.08 });
+  document.querySelectorAll('.fade').forEach(el => io.observe(el));
 </script>
 </body>
 </html>
