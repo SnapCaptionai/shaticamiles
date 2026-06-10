@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>The High Performing Ghost | Shatica Miles</title>
+  <meta name="description" content="The High Performing Ghost is the high achiever, fixer, strong one, and dependable person who keeps showing up for everyone while slowly disappearing from their own life." />
+  <link rel="canonical" href="https://shaticamiles.com/high-performing-ghost.html" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --black: #080808;
+      --dark: #111;
+      --card: #181818;
+      --border: rgba(214,165,93,.18);
+      --border-strong: rgba(214,165,93,.42);
+      --white: #f5f5f0;
+      --muted: #999;
+      --muted2: #666;
+      --mint: #d6a55d;
+      --mint-dim: rgba(214,165,93,.09);
+      --max: 920px;
+      --nav-h: 58px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background: var(--black);
+      color: var(--white);
+      line-height: 1.75;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    h1, h2, h3 {
+      font-family: 'Cormorant Garamond', serif;
+      line-height: 1.15;
+    }
+
+    .container {
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 200;
+      height: var(--nav-h);
+      background: rgba(8,8,8,.96);
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+    }
+
+    nav .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+    }
+
+    .nav-logo {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.3rem;
+      font-weight: 600;
+      letter-spacing: .03em;
+    }
+
+    .nav-logo em {
+      color: var(--mint);
+      font-style: italic;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 1.4rem;
+      align-items: center;
+    }
+
+    .nav-links a {
+      font-size: .82rem;
+      color: var(--muted);
+      font-weight: 600;
+    }
+
+    .nav-links a:hover {
+      color: var(--white);
+    }
+
+    .nav-cta {
+      background: var(--mint);
+      color: var(--black) !important;
+      padding: .38rem 1.1rem;
+      border-radius: 50px;
+      font-weight: 700 !important;
+    }
+
+    main {
+      padding-top: var(--nav-h);
+    }
+
+    .hero {
+      padding: 5rem 0 3.5rem;
+      border-bottom: 1px solid var(--border);
+      background:
+        radial-gradient(circle at top right, rgba(214,165,93,.12), transparent 35%),
+        var(--black);
+    }
+
+    .eyebrow {
+      display: inline-block;
+      text-transform: uppercase;
+      letter-spacing: .2em;
+      font-size: .68rem;
+      font-weight: 700;
+      color: var(--mint);
+      margin-bottom: .8rem;
+    }
+
+    h1 {
+      font-size: clamp(2.45rem, 6vw, 4.8rem);
+      font-weight: 300;
+      max-width: 840px;
+      margin-bottom: 1rem;
+    }
+
+    h1 em {
+      color: var(--mint);
+      font-style: italic;
+    }
+
+    .hero-sub {
+      max-width: 700px;
+      color: var(--muted);
+      font-size: 1rem;
+      margin-bottom: 2rem;
+    }
+
+    .btn-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: .9rem;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: .72rem 1.5rem;
+      border-radius: 50px;
+      font-size: .88rem;
+      font-weight: 700;
+    }
+
+    .btn-mint {
+      background: var(--mint);
+      color: var(--black);
+    }
+
+    .btn-ghost {
+      border: 1px solid var(--border-strong);
+      color: var(--white);
+    }
+
+    .content {
+      padding: 4rem 0;
+    }
+
+    .article {
+      max-width: 760px;
+    }
+
+    .article p {
+      color: var(--muted);
+      margin-bottom: 1.15rem;
+      font-size: .98rem;
+    }
+
+    .article strong {
+      color: var(--white);
+    }
+
+    .article h2 {
+      font-size: clamp(1.8rem, 4vw, 3rem);
+      font-weight: 300;
+      margin: 3rem 0 1rem;
+    }
+
+    .article h2 em {
+      color: var(--mint);
+      font-style: italic;
+    }
+
+    .quote-box {
+      border-left: 2px solid var(--mint);
+      background: var(--mint-dim);
+      padding: 1.2rem 1.35rem;
+      margin: 2rem 0;
+      border-radius: 0 12px 12px 0;
+    }
+
+    .quote-box p {
+      font-family: 'Cormorant Garamond', serif;
+      color: var(--white);
+      font-size: 1.32rem;
+      font-style: italic;
+      line-height: 1.45;
+      margin: 0;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: .85rem;
+      margin: 1.5rem 0 2rem;
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 1.1rem 1.2rem;
+    }
+
+    .card h3 {
+      font-size: 1.35rem;
+      color: var(--white);
+      margin-bottom: .35rem;
+    }
+
+    .card p {
+      margin: 0;
+      font-size: .9rem;
+    }
+
+    .cta-box {
+      background: var(--card);
+      border: 1px solid var(--border-strong);
+      border-radius: 18px;
+      padding: 2rem;
+      margin-top: 3rem;
+    }
+
+    .cta-box h2 {
+      margin-top: 0;
+    }
+
+    footer {
+      border-top: 1px solid var(--border);
+      background: var(--dark);
+      padding: 2rem 0;
+      text-align: center;
+      color: var(--muted2);
+      font-size: .8rem;
+    }
+
+    footer a {
+      color: var(--mint);
+    }
+
+    @media(max-width: 768px) {
+      .nav-links {
+        gap: .75rem;
+      }
+
+      .nav-links a {
+        font-size: .7rem;
+      }
+
+      .hero {
+        padding: 4rem 0 3rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <nav>
+    <div class="container">
+      <a href="index.html" class="nav-logo">Myss <em>T</em></a>
+      <div class="nav-links">
+        <a href="index.html#start">Start Here</a>
+        <a href="loyalty-tax.html">Loyalty Tax</a>
+        <a href="blog.html">Blog</a>
+        <a href="index.html#tv">Whose Tea TV</a>
+        <a href="mailto:whosttv@gmail.com?subject=30 Minute Reset Session" class="nav-cta">Book $25 Reset</a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <span class="eyebrow">Identity After Usefulness</span>
+        <h1>The <em>High Performing Ghost</em></h1>
+        <p class="hero-sub">
+          The High Performing Ghost is the person everyone depends on, praises, calls strong, and keeps using, while that same person slowly disappears from their own life.
+        </p>
+        <div class="btn-row">
+          <a href="mailto:whosttv@gmail.com?subject=30 Minute Reset Session" class="btn btn-mint">Book a $25 Reset</a>
+          <a href="loyalty-tax.html" class="btn btn-ghost">Read The Loyalty Tax</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="content">
+      <div class="container article">
+
+        <p>
+          The High Performing Ghost does not look like someone who is falling apart.
+        </p>
+
+        <p>
+          That is the part people miss.
+        </p>
+
+        <p>
+          You still answer the message. You still hit the deadline. You still show up with the solution. You still remember what everybody else forgot.
+        </p>
+
+        <p>
+          From the outside, you look dependable.
+        </p>
+
+        <p>
+          Inside, you are barely there.
+        </p>
+
+        <div class="quote-box">
+          <p>You became so good at being useful that people stopped asking if you were whole.</p>
+        </div>
+
+        <p>
+          That is the High Performing Ghost.
+        </p>
+
+        <p>
+          Present in the work. Present in the crisis. Present in the family. Present in the group chat. Present in the role.
+        </p>
+
+        <p>
+          Missing from yourself.
+        </p>
+
+        <h2>How The Ghost Gets <em>Created</em></h2>
+
+        <p>
+          Nobody wakes up one day and decides to disappear.
+        </p>
+
+        <p>
+          It happens slowly.
+        </p>
+
+        <p>
+          You become the responsible one because someone had to be. You become the fixer because chaos kept showing up. You become the strong one because falling apart never felt safe.
+        </p>
+
+        <p>
+          At first, it may even feel like purpose.
+        </p>
+
+        <p>
+          People trust you. People need you. People praise you.
+        </p>
+
+        <p>
+          The praise starts sounding like identity.
+        </p>
+
+        <p>
+          Reliable. Strong. Mature. Capable. Indispensable.
+        </p>
+
+        <p>
+          Those words can feel good until you realize they are also cages.
+        </p>
+
+        <h2>The Loyalty Tax Inside The Role</h2>
+
+        <p>
+          The Loyalty Tax is the invisible price high achievers, fixers, strong ones, and dependable people pay when loyalty starts costing them themselves.
+        </p>
+
+        <p>
+          The High Performing Ghost is what happens when that tax keeps collecting for too long.
+        </p>
+
+        <p>
+          You give your time. Then your energy. Then your attention. Then your peace. Then your preferences. Then your actual sense of self.
+        </p>
+
+        <p>
+          Eventually, people know what you can do, but they no longer know who you are.
+        </p>
+
+        <p>
+          Worse than that, you may not know either.
+        </p>
+
+        <h2>Signs You May Be A High Performing Ghost</h2>
+
+        <div class="cards">
+          <div class="card">
+            <h3>You are visible for what you produce.</h3>
+            <p>
+              People notice your output, your strength, and your usefulness, but they miss your exhaustion.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>You keep showing up while feeling absent.</h3>
+            <p>
+              Your body is there. Your calendar is full. Your face is present. Your real self feels far away.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>You do not know what you want anymore.</h3>
+            <p>
+              You know what everyone needs from you, but your own desires feel blurry, delayed, or buried.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>You feel guilty when you choose yourself.</h3>
+            <p>
+              Rest, joy, boundaries, and silence feel like betrayal because your identity has been tied to service.
+            </p>
+          </div>
+        </div>
+
+        <h2>Why Success Does Not Fix It</h2>
+
+        <p>
+          This is why the High Performing Ghost can be successful and still feel empty.
+        </p>
+
+        <p>
+          The promotion does not fix it. The title does not fix it. The praise does not fix it. The check may help your bills, but it does not automatically return you to yourself.
+        </p>
+
+        <p>
+          Success can become another place to hide.
+        </p>
+
+        <p>
+          It can give you more proof that you are capable while never asking if you are connected to the life you are building.
+        </p>
+
+        <p>
+          That is why some people reach the thing they prayed for and still feel strangely absent when they get there.
+        </p>
+
+        <h2>The Part Nobody Wants To Admit</h2>
+
+        <p>
+          Being needed can become addictive.
+        </p>
+
+        <p>
+          Not because you love being drained, but because being needed may be the place where you learned to feel safe.
+        </p>
+
+        <p>
+          If people need you, they may not leave.
+        </p>
+
+        <p>
+          If people need you, they may not reject you.
+        </p>
+
+        <p>
+          If people need you, they may keep calling, including, depending, and praising.
+        </p>
+
+        <p>
+          That can feel like love when you have been trained to earn your place.
+        </p>
+
+        <p>
+          But being needed is not the same as being valued.
+        </p>
+
+        <p>
+          Being useful is not the same as being known.
+        </p>
+
+        <p>
+          Being strong is not the same as being safe.
+        </p>
+
+        <h2>How You Come Back To Yourself</h2>
+
+        <p>
+          You come back by telling the truth about where you disappeared.
+        </p>
+
+        <p>
+          Where did your yes become automatic?
+        </p>
+
+        <p>
+          Where did your needs become inconvenient?
+        </p>
+
+        <p>
+          Where did you start performing strength instead of asking for support?
+        </p>
+
+        <p>
+          Where did you accept praise in place of protection?
+        </p>
+
+        <p>
+          These questions are not soft. They are necessary.
+        </p>
+
+        <p>
+          You cannot rebuild a life around a version of you that only exists for other people.
+        </p>
+
+        <h2>The First Move</h2>
+
+        <p>
+          Do one thing this week that proves you still belong to yourself.
+        </p>
+
+        <p>
+          Cancel the thing you said yes to out of fear.
+        </p>
+
+        <p>
+          Ask for help before resentment speaks for you.
+        </p>
+
+        <p>
+          Take the quiet hour without explaining it.
+        </p>
+
+        <p>
+          Tell the truth to yourself before you try to make it sound acceptable to someone else.
+        </p>
+
+        <p>
+          One move is enough to interrupt the pattern.
+        </p>
+
+        <p>
+          One honest move tells your body that you are no longer willing to disappear just to stay useful.
+        </p>
+
+        <div class="cta-box">
+          <h2>Do Not Leave With Awareness And No Plan</h2>
+          <p>
+            If this hit too close, book the 30 Minute Reset Session. One problem. One plan. Real clarity for the person who is tired of being dependable but disconnected from themselves.
+          </p>
+          <div class="btn-row">
+            <a href="mailto:whosttv@gmail.com?subject=30 Minute Reset Session" class="btn btn-mint">Book the $25 Reset</a>
+            <a href="rest-is-not-restoration.html" class="btn btn-ghost">Read Rest Is Not Restoration</a>
+          </div>
+        </div>
+
+        <div class="quote-box">
+          <p>I am the gas station. I fill you up so you can move. You still have to drive.</p>
+        </div>
+
+        <p>
+          Myss T, Whose Tea TV
+        </p>
+
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>© 2026 Shatica Miles. Creator of The Loyalty Tax. Built through Whose Tea TV.</p>
+      <p><a href="index.html">Home</a> · <a href="loyalty-tax.html">The Loyalty Tax</a> · <a href="mailto:whosttv@gmail.com">whosttv@gmail.com</a></p>
+    </div>
+  </footer>
+</body>
+</html>
