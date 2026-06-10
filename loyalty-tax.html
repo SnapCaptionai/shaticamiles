@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>The Loyalty Tax | Shatica Miles</title>
+  <meta name="description" content="The Loyalty Tax is the invisible price high achievers, fixers, strong ones, and dependable people pay when loyalty starts costing them themselves." />
+  <link rel="canonical" href="https://shaticamiles.com/loyalty-tax.html" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --black: #080808;
+      --dark: #111;
+      --card: #181818;
+      --border: rgba(214,165,93,.18);
+      --border-strong: rgba(214,165,93,.42);
+      --white: #f5f5f0;
+      --muted: #999;
+      --muted2: #666;
+      --mint: #d6a55d;
+      --mint-dim: rgba(214,165,93,.09);
+      --max: 920px;
+      --nav-h: 58px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background: var(--black);
+      color: var(--white);
+      line-height: 1.75;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    h1, h2, h3, blockquote {
+      font-family: 'Cormorant Garamond', serif;
+      line-height: 1.15;
+    }
+
+    .container {
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 200;
+      height: var(--nav-h);
+      background: rgba(8,8,8,.96);
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+    }
+
+    nav .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+    }
+
+    .nav-logo {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.3rem;
+      font-weight: 600;
+      letter-spacing: .03em;
+    }
+
+    .nav-logo em {
+      color: var(--mint);
+      font-style: italic;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 1.4rem;
+      align-items: center;
+    }
+
+    .nav-links a {
+      font-size: .82rem;
+      color: var(--muted);
+      font-weight: 600;
+    }
+
+    .nav-links a:hover {
+      color: var(--white);
+    }
+
+    .nav-cta {
+      background: var(--mint);
+      color: var(--black) !important;
+      padding: .38rem 1.1rem;
+      border-radius: 50px;
+      font-weight: 700 !important;
+    }
+
+    main {
+      padding-top: var(--nav-h);
+    }
+
+    .hero {
+      padding: 5.5rem 0 4rem;
+      border-bottom: 1px solid var(--border);
+      background:
+        radial-gradient(circle at top right, rgba(214,165,93,.12), transparent 35%),
+        var(--black);
+    }
+
+    .eyebrow {
+      display: inline-block;
+      text-transform: uppercase;
+      letter-spacing: .2em;
+      font-size: .68rem;
+      font-weight: 700;
+      color: var(--mint);
+      margin-bottom: .8rem;
+    }
+
+    h1 {
+      font-size: clamp(2.8rem, 7vw, 5.2rem);
+      font-weight: 300;
+      max-width: 780px;
+      margin-bottom: 1rem;
+    }
+
+    h1 em {
+      color: var(--mint);
+      font-style: italic;
+    }
+
+    .hero-sub {
+      max-width: 680px;
+      color: var(--muted);
+      font-size: 1rem;
+      margin-bottom: 2rem;
+    }
+
+    .btn-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: .9rem;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: .72rem 1.5rem;
+      border-radius: 50px;
+      font-size: .88rem;
+      font-weight: 700;
+    }
+
+    .btn-mint {
+      background: var(--mint);
+      color: var(--black);
+    }
+
+    .btn-ghost {
+      border: 1px solid var(--border-strong);
+      color: var(--white);
+    }
+
+    .content {
+      padding: 4rem 0;
+    }
+
+    .article {
+      max-width: 760px;
+    }
+
+    .article p {
+      color: var(--muted);
+      margin-bottom: 1.15rem;
+      font-size: .98rem;
+    }
+
+    .article strong {
+      color: var(--white);
+    }
+
+    .article h2 {
+      font-size: clamp(1.8rem, 4vw, 3rem);
+      font-weight: 300;
+      margin: 3rem 0 1rem;
+    }
+
+    .article h2 em {
+      color: var(--mint);
+      font-style: italic;
+    }
+
+    .callout {
+      border-left: 2px solid var(--mint);
+      background: var(--mint-dim);
+      padding: 1.2rem 1.35rem;
+      margin: 2rem 0;
+      border-radius: 0 12px 12px 0;
+    }
+
+    .callout p {
+      font-family: 'Cormorant Garamond', serif;
+      color: var(--white);
+      font-size: 1.35rem;
+      font-style: italic;
+      line-height: 1.45;
+      margin: 0;
+    }
+
+    .signs {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: .85rem;
+      margin: 1.5rem 0 2rem;
+    }
+
+    .sign-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 1rem 1.1rem;
+    }
+
+    .sign-card h3 {
+      font-size: 1.25rem;
+      color: var(--white);
+      margin-bottom: .35rem;
+    }
+
+    .sign-card p {
+      font-size: .85rem;
+      margin: 0;
+    }
+
+    .cta-box {
+      background: var(--card);
+      border: 1px solid var(--border-strong);
+      border-radius: 18px;
+      padding: 2rem;
+      margin-top: 3rem;
+    }
+
+    .cta-box h2 {
+      margin-top: 0;
+    }
+
+    footer {
+      border-top: 1px solid var(--border);
+      background: var(--dark);
+      padding: 2rem 0;
+      text-align: center;
+      color: var(--muted2);
+      font-size: .8rem;
+    }
+
+    footer a {
+      color: var(--mint);
+    }
+
+    @media(max-width: 768px) {
+      .nav-links {
+        gap: .8rem;
+      }
+
+      .nav-links a {
+        font-size: .72rem;
+      }
+
+      .signs {
+        grid-template-columns: 1fr;
+      }
+
+      .hero {
+        padding: 4rem 0 3rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <nav>
+    <div class="container">
+      <a href="index.html" class="nav-logo">Myss <em>T</em></a>
+      <div class="nav-links">
+        <a href="index.html#start">Start Here</a>
+        <a href="loyalty-tax.html">Loyalty Tax</a>
+        <a href="blog.html">Blog</a>
+        <a href="index.html#tv">Whose Tea TV</a>
+        <a href="mailto:whosttv@gmail.com?subject=30 Minute Reset Session" class="nav-cta">Book $25 Reset</a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <span class="eyebrow">The Framework</span>
+        <h1>The <em>Loyalty Tax</em></h1>
+        <p class="hero-sub">
+          The Loyalty Tax is the invisible price high achievers, fixers, strong ones, and dependable people pay when being loyal starts costing them themselves.
+        </p>
+        <div class="btn-row">
+          <a href="mailto:whosttv@gmail.com?subject=30 Minute Reset Session" class="btn btn-mint">Book a $25 Reset</a>
+          <a href="index.html#tv" class="btn btn-ghost">Watch Whose Tea TV</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="content">
+      <div class="container article">
+
+        <p>
+          I am Shatica Miles, also known as Myss T. I created The Loyalty Tax after spending 23 years helping build systems that did not build me back.
+        </p>
+
+        <p>
+          I was dependable. I was useful. I was trusted with responsibility that reached past my title. I trained people. I carried pressure. I kept things moving.
+        </p>
+
+        <p>
+          But when it was time for opportunity, ownership, pay, and recognition, I learned a hard truth. Some systems will praise your loyalty while quietly benefiting from your silence.
+        </p>
+
+        <div class="callout">
+          <p>You show up for everyone. You hold it together. You fix it. You deliver. Yet somehow, you are still the one who is drained.</p>
+        </div>
+
+        <h2>What Is <em>The Loyalty Tax?</em></h2>
+
+        <p>
+          The Loyalty Tax is the invisible psychological, emotional, financial, and identity based cost you pay when your loyalty becomes more valuable to other people than it is protective of you.
+        </p>
+
+        <p>
+          It is what happens when you keep giving more, staying longer, explaining better, forgiving faster, and proving harder, while the return keeps getting smaller.
+        </p>
+
+        <p>
+          It does not always look like failure. Sometimes it looks like being the responsible one. The strong one. The one everybody calls when something needs to be fixed.
+        </p>
+
+        <p>
+          But underneath that role, something starts happening. You become useful before you become yourself. Eventually you forget those are two different things.
+        </p>
+
+        <h2>The Signs You Are Paying It</h2>
+
+        <div class="signs">
+          <div class="sign-card">
+            <h3>You are praised but drained.</h3>
+            <p>People admire how much you carry, but they rarely ask what it costs you.</p>
+          </div>
+
+          <div class="sign-card">
+            <h3>You are trusted but underpaid.</h3>
+            <p>Your work holds weight, but the reward does not match the responsibility.</p>
+          </div>
+
+          <div class="sign-card">
+            <h3>You are needed but not chosen.</h3>
+            <p>You are useful in the background, but passed over when opportunity appears.</p>
+          </div>
+
+          <div class="sign-card">
+            <h3>You are loyal but invisible.</h3>
+            <p>You keep showing up for a system, person, or role that stopped showing up for you.</p>
+          </div>
+        </div>
+
+        <h2>This Is Not Just About Work</h2>
+
+        <p>
+          The Loyalty Tax can show up in a job, a family, a relationship, a friendship, a church, a business, or a community.
+        </p>
+
+        <p>
+          It shows up anywhere your dependability becomes expected, your needs become inconvenient, and your exhaustion becomes the price of staying connected.
+        </p>
+
+        <p>
+          That is why this conversation matters. A lot of people are not lazy. They are not confused. They are not ungrateful. They are overloaded from carrying roles they never agreed to carry forever.
+        </p>
+
+        <h2>The Real Cost</h2>
+
+        <p>
+          The real cost is not only time. It is self trust.
+        </p>
+
+        <p>
+          Every time you stay where you are shrinking, you teach yourself to doubt what you already know. Every time you explain away disrespect, you train your nervous system to accept less. Every time you choose loyalty over truth, you pay a little more of yourself.
+        </p>
+
+        <p>
+          That is the tax.
+        </p>
+
+        <p>
+          It collects in silence. It collects in resentment. It collects in missed chances, delayed decisions, tired mornings, fake smiles, and lives that look functional but feel empty.
+        </p>
+
+        <h2>How You Stop Paying It</h2>
+
+        <p>
+          You stop paying The Loyalty Tax by telling the truth about the role you have been playing.
+        </p>
+
+        <p>
+          You ask who benefits from your silence. You ask what your loyalty is protecting. You ask whether the life you are maintaining is actually a life you still want.
+        </p>
+
+        <p>
+          Then you stop confusing endurance with wisdom.
+        </p>
+
+        <p>
+          You do not have to blow your life up overnight. But you do have to stop pretending that being needed is the same as being valued.
+        </p>
+
+        <div class="cta-box">
+          <h2>Start Your Reset</h2>
+          <p>
+            If this hit too close, do not leave with awareness and no plan. Book a 30 Minute Reset Session. One problem. One plan. Real clarity.
+          </p>
+          <div class="btn-row">
+            <a href="mailto:whosttv@gmail.com?subject=30 Minute Reset Session" class="btn btn-mint">Book the $25 Reset</a>
+            <a href="index.html" class="btn btn-ghost">Back to Home</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>© 2026 Shatica Miles. Creator of The Loyalty Tax. Built through Whose Tea TV.</p>
+      <p><a href="index.html">Home</a> · <a href="mailto:whosttv@gmail.com">whosttv@gmail.com</a></p>
+    </div>
+  </footer>
+</body>
+</html>
