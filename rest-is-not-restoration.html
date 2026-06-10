@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Rest Is Not Restoration | Shatica Miles</title>
+  <meta name="description" content="Rest is not restoration. A Whose Tea TV article by Shatica Miles for high achievers, strong ones, fixers, and dependable people who are tired in a way sleep does not fix." />
+  <link rel="canonical" href="https://shaticamiles.com/rest-is-not-restoration.html" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --black: #080808;
+      --dark: #111;
+      --card: #181818;
+      --border: rgba(214,165,93,.18);
+      --border-strong: rgba(214,165,93,.42);
+      --white: #f5f5f0;
+      --muted: #999;
+      --muted2: #666;
+      --mint: #d6a55d;
+      --mint-dim: rgba(214,165,93,.09);
+      --max: 920px;
+      --nav-h: 58px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background: var(--black);
+      color: var(--white);
+      line-height: 1.75;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    h1, h2, h3 {
+      font-family: 'Cormorant Garamond', serif;
+      line-height: 1.15;
+    }
+
+    .container {
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 200;
+      height: var(--nav-h);
+      background: rgba(8,8,8,.96);
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+    }
+
+    nav .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+    }
+
+    .nav-logo {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.3rem;
+      font-weight: 600;
+      letter-spacing: .03em;
+    }
+
+    .nav-logo em {
+      color: var(--mint);
+      font-style: italic;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 1.4rem;
+      align-items: center;
+    }
+
+    .nav-links a {
+      font-size: .82rem;
+      color: var(--muted);
+      font-weight: 600;
+    }
+
+    .nav-links a:hover {
+      color: var(--white);
+    }
+
+    .nav-cta {
+      background: var(--mint);
+      color: var(--black) !important;
+      padding: .38rem 1.1rem;
+      border-radius: 50px;
+      font-weight: 700 !important;
+    }
+
+    main {
+      padding-top: var(--nav-h);
+    }
+
+    .hero {
+      padding: 5rem 0 3.5rem;
+      border-bottom: 1px solid var(--border);
+      background:
+        radial-gradient(circle at top right, rgba(214,165,93,.12), transparent 35%),
+        var(--black);
+    }
+
+    .eyebrow {
+      display: inline-block;
+      text-transform: uppercase;
+      letter-spacing: .2em;
+      font-size: .68rem;
+      font-weight: 700;
+      color: var(--mint);
+      margin-bottom: .8rem;
+    }
+
+    h1 {
+      font-size: clamp(2.45rem, 6vw, 4.8rem);
+      font-weight: 300;
+      max-width: 840px;
+      margin-bottom: 1rem;
+    }
+
+    h1 em {
+      color: var(--mint);
+      font-style: italic;
+    }
+
+    .hero-sub {
+      max-width: 700px;
+      color: var(--muted);
+      font-size: 1rem;
+      margin-bottom: 2rem;
+    }
+
+    .btn-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: .9rem;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: .72rem 1.5rem;
+      border-radius: 50px;
+      font-size: .88rem;
+      font-weight: 700;
+    }
+
+    .btn-mint {
+      background: var(--mint);
+      color: var(--black);
+    }
+
+    .btn-ghost {
+      border: 1px solid var(--border-strong);
+      color: var(--white);
+    }
+
+    .content {
+      padding: 4rem 0;
+    }
+
+    .article {
+      max-width: 760px;
+    }
+
+    .article p {
+      color: var(--muted);
+      margin-bottom: 1.15rem;
+      font-size: .98rem;
+    }
+
+    .article strong {
+      color: var(--white);
+    }
+
+    .article h2 {
+      font-size: clamp(1.8rem, 4vw, 3rem);
+      font-weight: 300;
+      margin: 3rem 0 1rem;
+    }
+
+    .article h2 em {
+      color: var(--mint);
+      font-style: italic;
+    }
+
+    .quote-box {
+      border-left: 2px solid var(--mint);
+      background: var(--mint-dim);
+      padding: 1.2rem 1.35rem;
+      margin: 2rem 0;
+      border-radius: 0 12px 12px 0;
+    }
+
+    .quote-box p {
+      font-family: 'Cormorant Garamond', serif;
+      color: var(--white);
+      font-size: 1.32rem;
+      font-style: italic;
+      line-height: 1.45;
+      margin: 0;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: .85rem;
+      margin: 1.5rem 0 2rem;
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 1.1rem 1.2rem;
+    }
+
+    .card h3 {
+      font-size: 1.35rem;
+      color: var(--white);
+      margin-bottom: .35rem;
+    }
+
+    .card p {
+      margin: 0;
+      font-size: .9rem;
+    }
+
+    .cta-box {
+      background: var(--card);
+      border: 1px solid var(--border-strong);
+      border-radius: 18px;
+      padding: 2rem;
+      margin-top: 3rem;
+    }
+
+    .cta-box h2 {
+      margin-top: 0;
+    }
+
+    footer {
+      border-top: 1px solid var(--border);
+      background: var(--dark);
+      padding: 2rem 0;
+      text-align: center;
+      color: var(--muted2);
+      font-size: .8rem;
+    }
+
+    footer a {
+      color: var(--mint);
+    }
+
+    @media(max-width: 768px) {
+      .nav-links {
+        gap: .75rem;
+      }
+
+      .nav-links a {
+        font-size: .7rem;
+      }
+
+      .hero {
+        padding: 4rem 0 3rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <nav>
+    <div class="container">
+      <a href="index.html" class="nav-logo">Myss <em>T</em></a>
+      <div class="nav-links">
+        <a href="index.html#start">Start Here</a>
+        <a href="loyalty-tax.html">Loyalty Tax</a>
+        <a href="blog.html">Blog</a>
+        <a href="index.html#tv">Whose Tea TV</a>
+        <a href="mailto:whosttv@gmail.com?subject=30 Minute Reset Session" class="nav-cta">Book $25 Reset</a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <span class="eyebrow">Restoration</span>
+        <h1>Rest Is Not <em>Restoration</em></h1>
+        <p class="hero-sub">
+          For the high achiever, the strong one, the fixer, and the dependable person who keeps resting but still wakes up tired.
+        </p>
+        <div class="btn-row">
+          <a href="mailto:whosttv@gmail.com?subject=30 Minute Reset Session" class="btn btn-mint">Book a $25 Reset</a>
+          <a href="loyalty-tax.html" class="btn btn-ghost">Read The Loyalty Tax</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="content">
+      <div class="container article">
+
+        <p>
+          Have you ever sat there with a full cart, a packed schedule, and still felt empty?
+        </p>
+
+        <p>
+          Like nothing in that cart is going to fix what you keep trying not to feel.
+        </p>
+
+        <p>
+          Not the course. Not the wine. Not the trip you have been planning since last year.
+        </p>
+
+        <p>
+          Deep down, you already know what you actually need.
+        </p>
+
+        <p>
+          You have known for a while.
+        </p>
+
+        <p>
+          Still, somehow, you manage to sit there with that crooked little smile, thinking maybe this one thing will do it.
+        </p>
+
+        <p>
+          Maybe this cart. Maybe this trip. Maybe this new plan. Maybe this next version of you.
+        </p>
+
+        <div class="quote-box">
+          <p>You do not need another distraction. You need a return.</p>
+        </div>
+
+        <p>
+          That is why rest is not enough.
+        </p>
+
+        <p>
+          Rest pauses the body. Restoration returns you to yourself.
+        </p>
+
+        <p>
+          A nap can help your tired eyes. A quiet day can help your nervous system. A vacation can give you distance from the noise.
+        </p>
+
+        <p>
+          But none of those things restore what life trained you to ignore.
+        </p>
+
+        <h2>Why Rest Stops <em>Working</em></h2>
+
+        <p>
+          Rest stops working when the exhaustion is not only physical.
+        </p>
+
+        <p>
+          High achievers often treat rest like a battery charger. They unplug for a few hours, sleep a little longer, take one slow Sunday, then expect to feel new.
+        </p>
+
+        <p>
+          The problem is that some of your tired is not from doing too much.
+        </p>
+
+        <p>
+          Some of your tired is from being too many versions of yourself for too many people.
+        </p>
+
+        <p>
+          You are the problem solver. The steady one. The one who figures it out. The one who does not get to fall apart because everyone else is already leaning.
+        </p>
+
+        <p>
+          That kind of tired does not leave just because you stayed in bed.
+        </p>
+
+        <p>
+          It follows you because it is attached to a role.
+        </p>
+
+        <h2>The Loyalty Tax Hidden Inside Exhaustion</h2>
+
+        <p>
+          The Loyalty Tax is the invisible price high achievers, fixers, strong ones, and dependable people pay when loyalty starts costing them themselves.
+        </p>
+
+        <p>
+          It shows up when you keep giving more than you get back. It shows up when your usefulness becomes your identity. It shows up when people praise your strength while depending on your silence.
+        </p>
+
+        <p>
+          That tax does not only take your time. It takes your ability to hear yourself.
+        </p>
+
+        <p>
+          After a while, you do not know whether you are tired, angry, sad, bored, lonely, or simply done.
+        </p>
+
+        <p>
+          You only know you need a break.
+        </p>
+
+        <p>
+          Then you take the break and still feel like something is missing.
+        </p>
+
+        <p>
+          That missing thing is usually you.
+        </p>
+
+        <h2>Rest Gives You A Pause. Restoration Gives You A Return.</h2>
+
+        <div class="cards">
+          <div class="card">
+            <h3>Rest says stop.</h3>
+            <p>
+              Restoration asks what you have been carrying that should not come with you anymore.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>Rest clears the schedule.</h3>
+            <p>
+              Restoration questions why your schedule became a hiding place.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>Rest lowers the noise.</h3>
+            <p>
+              Restoration helps you hear the truth you have been avoiding.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>Rest gives relief.</h3>
+            <p>
+              Restoration gives direction.
+            </p>
+          </div>
+        </div>
+
+        <p>
+          Both matter.
+        </p>
+
+        <p>
+          But they are not the same thing.
+        </p>
+
+        <h2>Signs You Need Restoration, Not Just Rest</h2>
+
+        <p>
+          You may need restoration if sleep helps your body but not your spirit.
+        </p>
+
+        <p>
+          You may need restoration if you keep planning escapes instead of making changes.
+        </p>
+
+        <p>
+          You may need restoration if you feel irritated by people you love because you have nothing left to give.
+        </p>
+
+        <p>
+          You may need restoration if your calendar is full, your cart is full, your phone is full, but your life still feels empty.
+        </p>
+
+        <p>
+          You may need restoration if you are not just tired from what happened this week. You are tired from who you had to become to survive the last few years.
+        </p>
+
+        <h2>How To Start Restoring Yourself</h2>
+
+        <p>
+          Start by telling the truth.
+        </p>
+
+        <p>
+          Not the polished version. Not the version that makes you sound grateful, strong, patient, or understanding.
+        </p>
+
+        <p>
+          The real version.
+        </p>
+
+        <p>
+          What are you tired of pretending does not bother you?
+        </p>
+
+        <p>
+          Where are you giving loyalty to a life that no longer fits?
+        </p>
+
+        <p>
+          Which responsibility became part of your identity because nobody else picked it up?
+        </p>
+
+        <p>
+          What would you stop doing if you no longer needed to prove you were good?
+        </p>
+
+        <p>
+          Restoration begins when you stop managing the performance and start listening to the person underneath it.
+        </p>
+
+        <h2>The First Move</h2>
+
+        <p>
+          Do not try to rebuild your whole life today.
+        </p>
+
+        <p>
+          Pick one thing that is draining you.
+        </p>
+
+        <p>
+          Name it without dressing it up.
+        </p>
+
+        <p>
+          Decide what you need back.
+        </p>
+
+        <p>
+          Time. Energy. Space. Honesty. A plan. A conversation. A boundary. A decision.
+        </p>
+
+        <p>
+          Then take one small action that proves you are no longer missing from your own life.
+        </p>
+
+        <p>
+          That is restoration.
+        </p>
+
+        <div class="cta-box">
+          <h2>Do Not Leave With Awareness And No Plan</h2>
+          <p>
+            If this hit too close, book the 30 Minute Reset Session. One problem. One plan. Real clarity for the person who is tired of being aware but still stuck.
+          </p>
+          <div class="btn-row">
+            <a href="mailto:whosttv@gmail.com?subject=30 Minute Reset Session" class="btn btn-mint">Book the $25 Reset</a>
+            <a href="high-achievers-boundaries.html" class="btn btn-ghost">Read Why You Still Say Yes</a>
+          </div>
+        </div>
+
+        <div class="quote-box">
+          <p>I am the gas station. I fill you up so you can move. You still have to drive.</p>
+        </div>
+
+        <p>
+          Myss T, Whose Tea TV
+        </p>
+
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>© 2026 Shatica Miles. Creator of The Loyalty Tax. Built through Whose Tea TV.</p>
+      <p><a href="index.html">Home</a> · <a href="loyalty-tax.html">The Loyalty Tax</a> · <a href="mailto:whosttv@gmail.com">whosttv@gmail.com</a></p>
+    </div>
+  </footer>
+</body>
+</html>
